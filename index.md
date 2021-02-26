@@ -1,3 +1,8 @@
+---
+title: main page
+layout: default
+---
+
 # Nick Nonnenmacher's Open Source GIS Portfolio
 My name is Nick Nonnenmacher, I am a senior Environmantal Studies and Biology major and Geography minor at Middlebury College, graduating in May 2021. 
 
