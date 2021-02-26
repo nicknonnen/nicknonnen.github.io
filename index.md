@@ -7,4 +7,6 @@ My name is Nick Nonnenamcher, I am a senior Environmantal Studies and Biology ma
 1. first thing
 2. second thing
 
-the course website is found [here](https://gis4dev.github.io).
+The course website is found [here](https://gis4dev.github.io).
+
+I can edit this page as I need, sometiems Github takes some time to render new changes
