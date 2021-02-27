@@ -13,7 +13,7 @@ My name is Nick Nonnenmacher, I am a senior Environmantal Studies and Biology ma
 
 ## Blog Posts
 
-- [What is Open GIScience?]
+- [What is Open GIScience?](blogs/opensource.md)
 
 The course website is found [here](https://gis4dev.github.io).
 
