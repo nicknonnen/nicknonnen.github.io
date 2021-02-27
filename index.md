@@ -6,11 +6,14 @@ layout: default
 # Nick Nonnenmacher's Open Source GIS Portfolio
 My name is Nick Nonnenmacher, I am a senior Environmantal Studies and Biology major and Geography minor at Middlebury College, graduating in May 2021. 
 
-- [Gravity Model of Spatial Interaction](gravity/gravity.md)
-- item number two
+## GIScience Analyses
 
-1. first thing
-2. second thing
+- [Gravity Model of Spatial Interaction](gravity/gravity.md)
+- another future analysis
+
+## Blog Posts
+
+- [What is Open GIScience?]
 
 The course website is found [here](https://gis4dev.github.io).
 
