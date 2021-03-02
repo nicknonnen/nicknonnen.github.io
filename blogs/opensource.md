@@ -29,7 +29,7 @@ Rey, S. J. 2009. Show me the code: spatial analysis and open source. Journal of 
 Singleton, A. D., S. Spielman, and C. Brunsdon. 2016. Establishing a framework for Open Geographic Information science. International Journal of Geographical Information Science 30 (8):1507–1521. http://dx.doi.org/10.1080/13658816.2015.1137579
 
 
-To learn more about open source GIS, visit [OSGeo](https://www.osgeo.org)
+To learn more about open source GIS, visit [OSGeo](https://www.osgeo.org).
 
 [![OSGeo Logo](logo-osgeo.svg)](https://www.osgeo.org/)
 
