@@ -30,6 +30,7 @@ Singleton, A. D., S. Spielman, and C. Brunsdon. 2016. Establishing a framework f
 
 
 To learn more about open source GIS, visit [OSGeo](https://www.osgeo.org)
+
 [![OSGeo Logo](logo-osgeo.svg)](https://www.osgeo.org/).
 
 Submitted March 01, 2021
