@@ -29,5 +29,6 @@ Check back in shortly to view my completed Gravity Model and Spatial Analysis of
 Thank you to Professor Joe Holler and my class peers in Spring 2021 GEOG 323 for assistance, conversations, and thoughts while deliberating this assignment.
 
 Data Sources:
+- Population data [by Joe Holler](/assets/netown.gpkg)
 - Hospital Data: [Homeland Security](https://hifld-geoplatform.opendata.arcgis.com/datasets/6ac5e325468c4cb9b905f1728d6fbf0f_0)
 - Dartmouth Atlas of Health Care [boundary files](https://atlasdata.dartmouth.edu/downloads/supplemental#boundaries)
