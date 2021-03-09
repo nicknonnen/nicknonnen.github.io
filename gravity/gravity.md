@@ -22,6 +22,7 @@ In this exercise, I analyzed the interactions of towns and hospital clusters in 
 So far, my model may accept an input layer, target destinations, and a distance value. However, I have encountered many challenges in connecting the output of the distance matrix algorithm to the aggregate function outputting the product of the input and target weights, as well as experiencing some smaller technical issues in QGIS setting automatic "maximum" default values for λ, α, and β parameters. I know much of my model is unfinished, and as I work to fill in the gaps in the near future, I am certain I will encounter even more challenges I do not even know about yet.
 
 ![Model Diagram](/assets/model_diagram1.png)
+*Model Diagram - to be updated*
 
 Check back in shortly to view my completed Gravity Model and Spatial Analysis of hospital catchments in the Northeast US. The next steps of this assignment involve creating a model to preprocess hospital data (sourced from the Department of Homeland Security), grouping the remaining hospitals by town (sourced from the American Community Survey 2018 5-year, provided by Joe Holler), and running the spatial interaction model. This spatial interaction will then be displayed in a map format and compared to a hospital service area visualization by the the Dartmouth Health Atlas.
 
