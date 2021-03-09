@@ -15,7 +15,7 @@ All three exponent parameters, λ, α, and β, are modifiable by the user of the
 
 In this exercise, I analyzed the interactions of towns and hospital clusters in the Northeast US and then compared those catchment areas to the those of the Dartmouth Health Atlas.
 
-![Gravity Spatial Model Workflow 1](/assets/workflow1.3.png)
+![Gravity Spatial Model Workflow 1](/assets/workflow1.3.png)(/assets/workflow1.4)
 *Gravity Model Spatial Interaction Workflow - to be updated*
 
 Model so far
