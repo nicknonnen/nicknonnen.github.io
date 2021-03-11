@@ -16,5 +16,8 @@ My name is Nick Nonnenmacher, I am a senior Environmantal Studies and Biology ma
 - [GIS as Reproducible Science](blogs/reproduciblescience.md)
 
 The website for the Middlebury College Spring 2021 Open Source GIScience can be found [here](https://gis4dev.github.io).
+The link to access this GitHub repository may be found at the top of this screen and [here](https://github.com/nicknonnen).
+
+To learn more about myself, my work, and my education, visit my [LinkedIn profile](https://www.linkedin.com/in/nicholas-nonnenmacher-82a33b1b5/). 
 
 Thanks for checking out my work!
