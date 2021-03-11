@@ -3,6 +3,8 @@ title: main page
 layout: default
 ---
 
+[![MainPageCoverPhoto](/layouts/roys_ultradrama copy.png)]
+
 # Nick Nonnenmacher's Open Source GIS Portfolio
 My name is Nick Nonnenmacher, I am a senior Environmantal Studies and Biology major and Geography minor at Middlebury College, graduating in May 2021. This website contains my work and reflections submitted for Middlebury's Open Source GIScience course with Professor Joseph Holler. 
 
