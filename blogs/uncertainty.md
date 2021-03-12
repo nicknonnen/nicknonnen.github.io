@@ -1,1 +1,20 @@
-content here
+---
+layout: page
+title: Error and Uncertainty in GIScience
+---
+
+Geographers have had to work with inherent uncertainty since the inception of cartography: displaying a three-dimensional surface in just two with 100% accuracy is physically impossible. While the discipline has since experienced the time and creativity energy necessary to adequately overcome this cardinal challenge, many more uncertainty issues have arisen as the science progressed and incorporated more sophisticated technologies, welcomed more diverse worldviews, and broadened to study more distant geographies.
+
+In the modern day, a primary tool for geographic research is GIS. While GIS is a powerful spatial analysis tool, it introduces many nuanced and complex issues of uncertainty and accuracy to the field. As geographers are able to study the world at more and more specific scales, the reality of the analysis may become more and more distant from the reality of the phenomenon studied. This is a product of the inherent complexity and detailed nature of the world, not necessarily the fault of an analysis. As Longley et al. mentions, the world is only a reality because it contains everything all at once: to dissect that reality and focus on a single aspect is to ignore, and effectively isolate, the interacting elements and variables that are constantly in motion to create the study phenomena itself. In scientific lingo, this abstraction can be described in various ways, such as through error, accuracy, ambiguity, vagueness, and more. While these words differ in concrete definition, they all point towards that central disconnect that can only be explained by the difference between the scientist’s understanding of the contents of a dataset and the real phenomenon the data are believed to represent.
+
+In Longley et al., this disconnect is well represented (implication intended) in Figure 6.1. Any research must pass through three subjective filters: how the researcher conceives the real world they are about to analyze (are mountains an ecosystem that affect environment and weather, or settings for communities of people that are host to various cultures and economies?); how the researcher measures and represents that image of the reality under study (which map projection to use, which software to use, how to create a map visualization?); and finally, how the researcher analyzes the results drawn from the measurements and representations (which tools to use, which formulas to adhere to, how to document and structure a workflow?). As these steps compound throughout a project, the uncertainties born from each filter compound, and ultimately influence the final project.
+
+It is a geographer’s responsibility to document as many of these uncertainties as possible. Many of them—especially in the conception to measurement and measurement to analysis filters—are products of the world we live in, and cannot be controlled or mitigated by the researcher. To deal with these, the best solution is thorough reflection and communication of any biases or physical disconnections between an understanding of a data set and the real phenomena being represented. This practice can be championed by open source science cultures, which emphasizes transparency, reproducibility, and crediting any and all scientific work.
+
+In conclusion, uncertainties are ingrained in the natural world all scientists strive to study and understand. Recognizing there is an inherent disconnect between a final analysis of a phenomenon and the reality of the phenomenon itself is crucial to conducting and sharing valid scientific research, and can be easily encouraged and normalized through adoptions of open source practices. Uncertainty is not bad, just as change is not bad—both are aspects of reality. The universe we strive to study is complex and beautiful, and it is possible to produce consistent and credible conclusions while still acknowledging the inherent challenges that were present during our investigations.
+
+Reading:
+
+Longley, P. A., M. F. Goodchild, D. J. Maguire, and D. W. Rhind. 2008. Geographical information systems and science 2nd ed. Chichester: Wiley. [(only chapter 6: Uncertainty, pages 127-153)](https://github.com/GIS4DEV/literature/blob/master/Uncertainty%20Longley%20et%20al.pdf)
+
+Submitted March 12, 2021. 
