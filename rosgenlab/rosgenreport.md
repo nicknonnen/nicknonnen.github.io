@@ -122,6 +122,8 @@ Discuss an interpretation of your results.
 
 Discuss a response to the following prompt: Quantifying uncertainty in geomorphic systems and in GIScience is of paramount importance, not only for creating error bars on a graph, but for realistically communicating the reliability and legitimacy of an output dataset. Error bars do not (necessarily) reflect on the researcher. They stem from collection constraints, processing constraints, subjective decision making, and many, many more sources. Given what you have learned in this module, discuss at least three sources of error and uncertainty and how they could impact the classification of your stream. Where does uncertainty stem from? Why is uncertainty a problem? What could be done (or has been done) to fix or reduce uncertainty? In a perfect world, how could this uncertainty be removed?
 
+This analysis concludes the river segment loc_id = 25 in the John Day watershed falls under the Rosgen Level I classification c, and Level II classification C4. This differs from Kasprak's Level II classification of C4b, which means the recalculation of slope in this study did have a significant effect on the end conclusion. 
+
 ## Conclusion
 
 Restate the key findings and discuss their broader societal implications or contributions to theory.
