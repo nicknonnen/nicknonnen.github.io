@@ -72,6 +72,10 @@ Figures to Include:
 - Longitudinal profile graph with elevation and slope
 - Cross-sectional profile graph
 
+![Longitudinal Profile](/rosgenlab/assets/longitudinal_profile2.png)
+
+![Cross-sectional Profile](/rosgenlab/assets/crosssectional_profile1.png)
+
 Tables to Include:
 
 Table 1. Site Measurements
