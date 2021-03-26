@@ -18,7 +18,7 @@ Nick Nonnenmacher, Zach Hilgendorf, Joseph Holler, and Peter Kedron.
 Replication Materials Available at: ["RE - rosgen" GitHub repository](https://github.com/nicknonnen/RE-rosgen)
 
 Created: `21 March 2021`
-Revised: `25 March 2021`
+Revised: `26 March 2021`
 
 ## Introduction and Motivation
 
@@ -55,22 +55,6 @@ This assessment will be deemed successful if, based on the analysis conducted an
 
 
 ## Replication Results
-
-For each hypothesis examined, present separately the results of the replication attempt.
-1.	Briefly describe how the replication protocol outlined above was implemented reporting key information (e.g., sample size).
-2.	State whether the original hypothesis was or was not supported by the replication
-   - Provide key statistics produced by the replication.
-   - Provide key measures (e.g., matching effect direction/size, significance) used to make the decision.
-   - Highlight any contradictory results with a brief explanation
-3.	State whether any hypothesis linked to a planned deviation from the original study was supported. Provide key statistics and related reasoning.
-
-Figures to Include:
-- map of the study site shaded elevation
-- map of the study site slope
-- Map of the study site stream/river centerlines and final mean centerline
-- Map of the study site valley centerlines and final mean centerline
-- Longitudinal profile graph with elevation and slope
-- Cross-sectional profile graph
 
 ![John Day Watershed DEM](/rosgenlab/assets/JohnDayWatershedDEM_map1 copy.png)
 
@@ -139,7 +123,11 @@ Discuss an interpretation of your results.
 
 Discuss a response to the following prompt: Quantifying uncertainty in geomorphic systems and in GIScience is of paramount importance, not only for creating error bars on a graph, but for realistically communicating the reliability and legitimacy of an output dataset. Error bars do not (necessarily) reflect on the researcher. They stem from collection constraints, processing constraints, subjective decision making, and many, many more sources. Given what you have learned in this module, discuss at least three sources of error and uncertainty and how they could impact the classification of your stream. Where does uncertainty stem from? Why is uncertainty a problem? What could be done (or has been done) to fix or reduce uncertainty? In a perfect world, how could this uncertainty be removed?
 
-This analysis concludes the river segment loc_id = 25 in the John Day watershed falls under the Rosgen Level I classification c, and Level II classification C4. This differs from Kasprak's Level II classification of C4b, which means the recalculation of slope in this study did have a significant effect on the end conclusion.
+
+
+This analysis concludes the river segment loc_id = 25 in the John Day watershed falls under the Rosgen Level I classification c, and Level II classification C4. This differs from Kasprak's Level II classification of C4b, which means the recalculation of slope in this study did have a significant effect on the end conclusion. Otherwise, however, Kasprak's calculations were largely accurate and reproducible via remote GIS efforts demonstrated here.
+
+The Level I and II results found through these analyses are internally and logically consistent. As can be seen in the maps above, Study site 25 is located just before a fork in the river and covers a relatively straight and flat portion. The valley encompassed within the buffer zone (while not including much of the far shore) was easily determined, which greatly aided digitization and calculation. Determining the path of channels was slightly more difficult, but nevertheless possible. The same cannot be said of other Study Sites analyzed by GEOG 323 classmates, and this confusion proved to be one of the most significant barriers to accurately completing remote river classification work. 
 
 ## Conclusion
 
