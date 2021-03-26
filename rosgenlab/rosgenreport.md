@@ -72,6 +72,14 @@ Figures to Include:
 - Longitudinal profile graph with elevation and slope
 - Cross-sectional profile graph
 
+![John Day Watershed DEM](/rosgenlab/assets/JohnDayWatershedDEM_map1 copy.png)
+
+![John Day Watershed Study Site 25 Elevation](/rosgenlab/assets/elevation_map1 copy.png)
+
+![John Day Watershed Study Site 25 Slope](/rosgenlab/assets/slope_map1 copy.png)
+
+![John Day Watershed Study Site 25 Digitized River Centerlines](/rosgenlab/assets/rivercenterlines_map1 copy.png)
+
 ![Longitudinal Profile](/rosgenlab/assets/longitudinal_profile2.png)
 
 ![Cross-sectional Profile](/rosgenlab/assets/crosssectional_profile1.png)
