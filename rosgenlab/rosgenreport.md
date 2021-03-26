@@ -68,7 +68,7 @@ Some deviations from Kasprak's methodology were observed during this study. Beyo
 
 This assessment will be deemed successful if, based on the analysis conducted and measurement calculated, the same Rosgen classification code is applied to this river system segment as in Kasprak's study.
 
-![Rosgen Classification Guide](/assets/RosgenScreenshot.png)
+![Rosgen Classification Guide](/rosgenlab/assets/RosgenScreenshot.png)
 
 
 ## Replication Results
