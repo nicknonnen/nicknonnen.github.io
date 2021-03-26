@@ -94,6 +94,7 @@ Table 1. Site Measurements
 <br /><br />
 
 Table 2. Rosgen Level I Classification
+
 | Criteria | Value |
 | :-: | :-: |
 | Entrenchment Ratio | 18.331 |
@@ -104,6 +105,7 @@ Table 2. Rosgen Level I Classification
 <br /><br />
 
 Table 3. Rosgen Level II Classification
+
 | Criteria | Value |
 | :-: | :-: |
 | Slope | 0.0167 |
