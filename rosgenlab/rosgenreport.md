@@ -15,7 +15,7 @@ and Replication by: Kasprak, A., N. Hough-Snee, T. Beechie, N. Bouwes, G. Brierl
 Replication Authors:
 Nick Nonnenmacher, Zach Hilgendorf, Joseph Holler, and Peter Kedron.
 
-Replication Materials Available at: [github repository name](github repository link)
+Replication Materials Available at: [RE - Rosgen GitHub repository](https://github.com/nicknonnen/RE-rosgen)
 
 Created: `21 March 2021`
 Revised: `25 March 2021`
@@ -132,7 +132,7 @@ Do the research findings suggest a need for any future research?
 This virtual replication of Kasprak's ***The blurred line between form and process: A comparison of stream channel classification frameworks*** demonstrates that while a significant amount of stream classification work can be completed using GIS tools alone, some field work is necessary to collect valid and accurate data and make informed conclusions. This study sought to reproduce Kasprak's work using the same preexisting datasets and workflows, and would be deemed successful if the same Level I and II Rosgen stream classifications were reached after analysis. Only the Level I classification agreed between the two studies, reaffirming that in-person research at the site may have contributed to a more accurate final result.
 
 This conclusion comes with the interesting implication that perhaps stream classification work could be effectively done remotely in the future for other river systems. This conclusion must be accompanied by a cautious warning, however, as this study piggybacked off of a robust dataset and was, from the beginning, a replication of a study that had already produced results - nothing new was going to come of this work.
-This does not mean the remote replication was less work, but certainly required just as much critical thinking and analysis as the Kasprak field study. 
+This does not mean the remote replication was less work, but certainly required just as much critical thinking and analysis as the Kasprak field study.
 
 ## References
 
