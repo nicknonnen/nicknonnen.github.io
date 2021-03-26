@@ -22,8 +22,6 @@ Revised: `25 March 2021`
 
 ## Introduction and Motivation
 
-Briefly describe the original analysis – type of study, research design, analytical approach, and results; motivation of the replication; and outline of the replication study
-
 Understanding river dynamics and morphology is crucial to further understanding how a system influences and interacts with surrounding environments. Through a classification system such as the Rosgen Classification of Natural Rivers, these dynamics can be better studied and researchers can more accurately and effectively predict, manage, and conserve environments within and adjacent to river systems.
 
 This report stems from the original 1994 study ***A classification of natural rivers*** by Rosgen, which established a classification hierarchy with 7 major categories from A to G. Rosgen's motivation for this system was to aid river restoration, engineering, and conservation, as well as help predict oft-erratic future behavior with higher accuracy. That study was then replicated by Kasprack et al in 2016, in the report ***The blurred line between form and process: A comparison of stream channel classification frameworks***. In this replication, Kasprack aimed to identify weaknesses in four different river classification models (Rosgen, the River Styles Framework, the Natural Channels Classification, and Channel-form Based Statistical Classifications) in the same place - the John Day Watershed in eastern Oregon. Kasprack concluded the four schemes were largely consistent.
@@ -33,24 +31,9 @@ This study is a replication of Kasprack's analysis, with the goal of reproducing
 
 ## Procedure and Data
 
-Describe how the replication study will be implemented and identify any materials and procedures used to complete the replication.
-1.	For computational studies include information about the hardware and software environments of both the original study and the replication attempt.
-
-Protocol: Explain how the analysis of the replication will proceed and identify if the analysis plan will match the original study. For many replications this section may be quite short if the procedures used in the original analyses are followed closely. In those cases, this section can simply explain how key elements will be followed.
-
-Differences from the Original Study: Identify any ways in which the replication is planned to depart from the original study -- a) location, b) sampling, c) data, d) measures/variable construction, d) analytical techniques.
-1.	Provide the motivation for each change that is made to the original study.
-2.	State how the differences identified above may influence the expected size/direction of the effect of the original study
-3.	List any testable hypotheses associated with each change. If a hypothesis is directional, state the direction
-4.	Outline any initial analyses that were taken to assess whether the differences identified above will influence the outcome of the replication attempt.
-
-Assessment Criteria: Identify the criteria that will define whether the replication attempt was successful (e.g., matched statistical significance, direction of effect, similar magnitude of effect)
-- Reproducible documentation of methods, where documentation includes:
-- Annotated flowchart of final parameter values (use last page of RSC_EPA_2005 PDF)
-
 #### Data
->> CHamPS (Columbia Habitat Monitoring Program) [data]()
->> John Day Watershed Digital Elevation Model [data]()
+- CHamPS (Columbia Habitat Monitoring Program) [data]()
+- John Day Watershed Digital Elevation Model [data]()
 
 #### Procedure
 The purpose of this study was to replicate Kasprak's analysis to determine if the methodology was reproducible and viable. Therefore, the procedure for this project follows exactly or very closely that of Kasprak's, and focuses on study sites within the John Day Watershed. This replication effort was distributed across all students in Joe Holler's spring 2021 GEOG 323 Open Source GIScience, and the analysis in this document focuses specifically on study site 25 (loc_id = 25).
