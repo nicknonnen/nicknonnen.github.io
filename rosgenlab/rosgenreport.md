@@ -41,7 +41,7 @@ The purpose of this study was to replicate Kasprak's analysis to determine if th
 All procedures, code, and material for this study can be found [here](https://github.com/nicknonnen/RE-rosgen), in my individual RE-Rosgen repository.
 
 Detailed procedures for the GRASS analysis may be found [here](https://github.com/nicknonnen/RE-rosgen/blob/main/docs/instruction/instructor_materials/1-Research_Protocol_GRASS.docx).
-The code for R Studio analysis may be found [here]().
+The code for R Studio analysis may be found [here](/rosgen/2-ProfileViewer.Rmd).
 
 First, a GIS analysis of the data was conducted in GRASS. Models were used for [visualizing data](https://github.com/emmab725/RE-rosgen/blob/main/procedure/code/visualize.gxm) in GRASS and [calculating centerlines](https://github.com/emmab725/RE-rosgen/blob/main/procedure/code/center_line_length_no_clip.gxm) of rivers at each study site, eliminating [steps]() in section 1.3 and 2.2 respectively.
 
