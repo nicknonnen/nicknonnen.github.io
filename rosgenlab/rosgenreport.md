@@ -76,9 +76,10 @@ Figures to Include:
 
 ![Cross-sectional Profile](/rosgenlab/assets/crosssectional_profile1.png)
 
-Tables to Include:
+<br /><br /><br /><br />
 
 Table 1. Site Measurements
+
 | Variable | Value | Source |
 | :-: | :-: | :-: |
 | Bankfull Avg Width | 4.637 | CHaMP Data |
@@ -90,6 +91,8 @@ Table 1. Site Measurements
 | Valley Length | 197.033 | CHaMP Data |
 | Median Channel Material Particle Diameter | 59 | CHaMP Data |
 
+<br /><br />
+
 Table 2. Rosgen Level I Classification
 | Criteria | Value |
 | :-: | :-: |
@@ -98,12 +101,16 @@ Table 2. Rosgen Level I Classification
 | Sinuosity | 1.061 |
 | Level I Stream Type | C |
 
+<br /><br />
+
 Table 3. Rosgen Level II Classification
 | Criteria | Value |
 | :-: | :-: |
 | Slope | 0.0167 |
 | Channel Material | Gravel |
 | Level II Stream Type | C4 |
+
+<br />
 
 
 ## Unplanned Deviations from the Protocol
