@@ -18,7 +18,7 @@ Nick Nonnenmacher, Zach Hilgendorf, Joseph Holler, and Peter Kedron.
 Replication Materials Available at: ["RE - rosgen" GitHub repository](https://github.com/nicknonnen/RE-rosgen)
 
 Created: `21 March 2021`
-Revised: `26 March 2021`
+Revised: `28 March 2021`
 
 ## Introduction and Motivation
 
@@ -79,7 +79,7 @@ Figure 5. Visualizing the digitization process of determining the centerline of 
 Figure 6. The longitudinal profile of the river within Site 25. Note the different scales of the x and y axes. The peaks and valleys in the bottom righthand side of the graph are due to human error while digitizing valley and river centerlines, and accidentally including portions of the valley side.
 
 ![Cross-sectional Profile](/rosgenlab/assets/crosssectional_profile1.png)
-Figure 7. The cross-sectional profile of the river within Site 25. Note the different scales of the x and y axes. The bankfull width and flood-prone width may be estimated based off the center trough of this graph. 
+Figure 7. The cross-sectional profile of the river within Site 25. Note the different scales of the x and y axes. The bankfull width and flood-prone width may be estimated based off the center trough of this graph.
 
 <br /><br /><br /><br />
 
@@ -149,8 +149,7 @@ Do the research findings suggest a need for any future research?
 
 This virtual replication of Kasprak's ***The blurred line between form and process: A comparison of stream channel classification frameworks*** demonstrates that while a significant amount of stream classification work can be completed using GIS tools alone, some field work is necessary to collect valid and accurate data and make informed conclusions. This study sought to reproduce Kasprak's work using the same preexisting datasets and workflows, and would be deemed successful if the same Level I and II Rosgen stream classifications were reached after analysis. Only the Level I classification agreed between the two studies, reaffirming that in-person research at the site may have contributed to a more accurate final result.
 
-This conclusion comes with the interesting implication that perhaps stream classification work could be effectively done remotely in the future for other river systems. This conclusion must be accompanied by a cautious warning, however, as this study piggybacked off of a robust dataset and was, from the beginning, a replication of a study that had already produced results - nothing new was going to come of this work.
-This does not mean the remote replication was less work, but certainly required just as much critical thinking and analysis as the Kasprak field study.
+This conclusion comes with the interesting implication that perhaps stream classification work could be effectively done remotely in the future for other river systems. This conclusion must be accompanied by a cautious warning, however, as this study piggybacked off of a robust dataset and was, from the beginning, a replication of a study that had already produced results - nothing new was going to come of this work. This does not mean the remote replication was less work, and certainly required just as much critical thinking and analysis as Kasprak's field study. There is also the issue of how remote stream classification work may contribute to budding Open Science platforms and practices, as there is a significant barrier to entry in completing remote GIS work due to the amount of software necessary to learn. This study was completed by students studying the software, not the rivers, and therefore is not rooted in strong understandings (for the most part) of river dynamics and classification systems. It can be expected that the researchers most interested in the imlications of this work would have stronger backgrounds in river systems and less understanding of the software, and could therefore face significant hurdles in accurately and efficiently replicating such a study with another dataset. Nevertheless, with a greater volume of Open Science students will come a greater volume of Open Science practice, and the future will surely bring a group of motivated and capable researchers back to these studies again, to unlock yet more potential for river systems studies and open source GIS alike.
 
 ## References
 
