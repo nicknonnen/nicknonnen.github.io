@@ -52,21 +52,34 @@ Some deviations from Kasprak's methodology were observed during this study. Beyo
 This assessment will be deemed successful if, based on the analysis conducted and measurement calculated, the same Rosgen classification code is applied to this river system segment as in Kasprak's study.
 
 ![Rosgen Classification Guide](/rosgenlab/assets/RosgenScreenshot.png)
+Figure 1.
 
 
 ## Replication Results
 
+Through utilization of GRASS, RStudio, and QGIS software, we were able to nearly completely replicate Kasprak's study.
+
+The results of this study include basic calculations of the site river's characteristics in Table 1, consisting of bankfull width and depth, valley width and depth, river length and particle diameter; calculations to determine the site river's Rosgen Level I classification in Table 2, consisting of entrenchment ratio, width : depth ratio, and sinuosity; and calculations to determine the site river's Rosgen Level II classification in Table 3, consisting of slope and channel material. Sources for Table 1 values are listed within the table. In Table 2, entrenchment ratio was calculated by dividing the estimated flood-prone width (determined by the Cross-Sectional Profile in Figure 6) by the average bankfull width. Width : depth ratio was calculated by dividing the average bankfull width by the average bankfull depth. Slope was calculated by dividing the change in elevation within the study site by the length of the river within the study site.
+
+The figures below were produced from 1m-resolution data. The final Rosgen Level II classification of this river was determined to be C4, which differed to Kasprak's C4b. The main difference between these two classifications is slope, as seen in Figure 1 above. The river still displays the underlying common properties of a single-thread, slightly entrenched river with moderate sinuosity, characteristic of a meandering channel.
+
 ![John Day Watershed DEM](/rosgenlab/assets/JohnDayWatershedDEM_map1 copy.png)
+Figure 2. DEM map of the John Day Watershed extent, with Study Site 25 highlighted in the southeastern region.
 
 ![John Day Watershed Study Site 25 Elevation](/rosgenlab/assets/elevation_map1 copy.png)
+Figure 3. Visualizing elevation at Site 25. Red regions correlate to ground that is higher above sea level.
 
 ![John Day Watershed Study Site 25 Slope](/rosgenlab/assets/slope_map1 copy.png)
+Figure 4. Visualizing slope at Site 25. Bluer regions correlate to steeper slopes.
 
 ![John Day Watershed Study Site 25 Digitized River Centerlines](/rosgenlab/assets/rivercenterlines_map1 copy.png)
+Figure 5. Visualizing the digitization process of determining the centerline of the river running through Site 25. In order to calculate sinuosity and determine the Rosgen Level I class of a river, its centerline must be measured. This process was repeated for the valley banks on either side, and the two average centerlines were compared to calculate sinuosity (see Table 2).
 
 ![Longitudinal Profile](/rosgenlab/assets/longitudinal_profile2.png)
+Figure 6. The longitudinal profile of the river within Site 25. Note the different scales of the x and y axes. The peaks and valleys in the bottom righthand side of the graph are due to human error while digitizing valley and river centerlines, and accidentally including portions of the valley side.
 
 ![Cross-sectional Profile](/rosgenlab/assets/crosssectional_profile1.png)
+Figure 7. The cross-sectional profile of the river within Site 25. Note the different scales of the x and y axes. The bankfull width and flood-prone width may be estimated based off the center trough of this graph. 
 
 <br /><br /><br /><br />
 
