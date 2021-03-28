@@ -126,26 +126,11 @@ In order to initially install the required add-ons in GRASS on MacOS, XCode Comm
 
 ## Discussion
 
-Provide a summary and interpretation of the key findings of the replication *vis-a-vis* the original study results. If the attempt was a failure, discuss possible causes of the failure. These may include:
-- Practical Causes – related to lack of data, code, details in the original analysis
-- Informative Causes – related to absence of effect, change in population, or location.
-
-Discuss an interpretation of your results.
-- Were the Level I and Level II results internally and logically consistent? That is, did all the parameters for the identified stream type conform to expectations outlined in Rosgen?
-- Were your results consistent with previous evaluations of the same stream reach reported by Kasperak et al?
-
-Discuss a response to the following prompt: Quantifying uncertainty in geomorphic systems and in GIScience is of paramount importance, not only for creating error bars on a graph, but for realistically communicating the reliability and legitimacy of an output dataset. Error bars do not (necessarily) reflect on the researcher. They stem from collection constraints, processing constraints, subjective decision making, and many, many more sources. Given what you have learned in this module, discuss at least three sources of error and uncertainty and how they could impact the classification of your stream. Where does uncertainty stem from? Why is uncertainty a problem? What could be done (or has been done) to fix or reduce uncertainty? In a perfect world, how could this uncertainty be removed?
-
-
-
 This analysis concludes the river segment loc_id = 25 in the John Day watershed falls under the Rosgen Level I classification c, and Level II classification C4. This differs from Kasprak's Level II classification of C4b, which means the recalculation of slope in this study did have a significant effect on the end conclusion. Otherwise, however, Kasprak's calculations were largely accurate and reproducible via remote GIS efforts demonstrated here.
 
 The Level I and II results found through these analyses are internally and logically consistent. As can be seen in the maps above, Study site 25 is located just before a fork in the river and covers a relatively straight and flat portion. The valley encompassed within the buffer zone (while not including much of the far shore) was easily determined, which greatly aided digitization and calculation. Determining the path of channels was slightly more difficult, but nevertheless possible. The same cannot be said of other Study Sites analyzed by GEOG 323 classmates, and this confusion proved to be one of the most significant barriers to accurately completing remote river classification work.
 
 ## Conclusion
-
-Restate the key findings and discuss their broader societal implications or contributions to theory.
-Do the research findings suggest a need for any future research?
 
 This virtual replication of Kasprak's ***The blurred line between form and process: A comparison of stream channel classification frameworks*** demonstrates that while a significant amount of stream classification work can be completed using GIS tools alone, some field work is necessary to collect valid and accurate data and make informed conclusions. This study sought to reproduce Kasprak's work using the same preexisting datasets and workflows, and would be deemed successful if the same Level I and II Rosgen stream classifications were reached after analysis. Only the Level I classification agreed between the two studies, reaffirming that in-person research at the site may have contributed to a more accurate final result.
 
