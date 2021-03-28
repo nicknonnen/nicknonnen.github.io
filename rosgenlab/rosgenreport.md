@@ -32,8 +32,8 @@ This study is a replication of Kasprack's analysis, with the goal of reproducing
 ## Procedure and Data
 
 #### Data
-- CHamPS (Columbia Habitat Monitoring Program) [data]()
-- John Day Watershed Digital Elevation Model [data]()
+- CHamPS (Columbia Habitat Monitoring Program) [data](https://github.com/nicknonnen/RE-rosgen/tree/main/data/raw/public)
+- John Day Watershed Digital Elevation Model [data](https://geography.middlebury.edu/jholler/data/rosgenrr/JohnDayWShed.zip)
 
 #### Procedure
 The purpose of this study was to replicate Kasprak's analysis to determine if the methodology was reproducible and viable. Therefore, the procedure for this project follows exactly or very closely that of Kasprak's, and focuses on study sites within the John Day Watershed. This replication effort was distributed across all students in Joe Holler's spring 2021 GEOG 323 Open Source GIScience, and the analysis in this document focuses specifically on study site 25 (loc_id = 25).
@@ -127,7 +127,7 @@ Discuss a response to the following prompt: Quantifying uncertainty in geomorphi
 
 This analysis concludes the river segment loc_id = 25 in the John Day watershed falls under the Rosgen Level I classification c, and Level II classification C4. This differs from Kasprak's Level II classification of C4b, which means the recalculation of slope in this study did have a significant effect on the end conclusion. Otherwise, however, Kasprak's calculations were largely accurate and reproducible via remote GIS efforts demonstrated here.
 
-The Level I and II results found through these analyses are internally and logically consistent. As can be seen in the maps above, Study site 25 is located just before a fork in the river and covers a relatively straight and flat portion. The valley encompassed within the buffer zone (while not including much of the far shore) was easily determined, which greatly aided digitization and calculation. Determining the path of channels was slightly more difficult, but nevertheless possible. The same cannot be said of other Study Sites analyzed by GEOG 323 classmates, and this confusion proved to be one of the most significant barriers to accurately completing remote river classification work. 
+The Level I and II results found through these analyses are internally and logically consistent. As can be seen in the maps above, Study site 25 is located just before a fork in the river and covers a relatively straight and flat portion. The valley encompassed within the buffer zone (while not including much of the far shore) was easily determined, which greatly aided digitization and calculation. Determining the path of channels was slightly more difficult, but nevertheless possible. The same cannot be said of other Study Sites analyzed by GEOG 323 classmates, and this confusion proved to be one of the most significant barriers to accurately completing remote river classification work.
 
 ## Conclusion
 
