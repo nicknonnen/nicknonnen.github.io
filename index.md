@@ -12,6 +12,7 @@ My name is Nick Nonnenmacher, I am a senior Environmantal Studies and Biology ma
 
 - [Gravity Model of Spatial Interaction](gravity/gravity.md)
 - [Rosgen River Classification Replication](rosgenlab/rosgenreport.md)
+- [Spatial Urban Resilience Analysis in Dar es Salaam](darsptialanalysis/darspatialreport.sql)
 
 ## Blog Posts
 
