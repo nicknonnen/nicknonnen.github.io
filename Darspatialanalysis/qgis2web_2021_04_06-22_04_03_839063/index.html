@@ -94,22 +94,22 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">id</th>\
-                        <td>' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['Buffer ID'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">ward_name</th>\
-                        <td>' + (feature.properties['ward_name'] !== null ? autolinker.link(feature.properties['ward_name'].toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['Ward Name'] !== null ? autolinker.link(feature.properties['ward_name'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['totalpop'] !== null ? autolinker.link(feature.properties['totalpop'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['Total Pop'] !== null ? autolinker.link(feature.properties['totalpop'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">area_km2</th>\
-                        <td>' + (feature.properties['area_km2'] !== null ? autolinker.link(feature.properties['area_km2'].toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['Buffer Area (km2)'] !== null ? autolinker.link(feature.properties['area_km2'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">pop_density</th>\
-                        <td>' + (feature.properties['pop_density'] !== null ? autolinker.link(feature.properties['pop_density'].toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['Population Density'] !== null ? autolinker.link(feature.properties['pop_density'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -222,19 +222,19 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">id</th>\
-                        <td>' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['Buffer ID'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">total_ct</th>\
-                        <td>' + (feature.properties['total_ct'] !== null ? autolinker.link(feature.properties['total_ct'].toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['Total Buffer Population'] !== null ? autolinker.link(feature.properties['total_ct'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">area_km2_inside</th>\
-                        <td>' + (feature.properties['area_km2_inside'] !== null ? autolinker.link(feature.properties['area_km2_inside'].toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['Buffer Area (km2)'] !== null ? autolinker.link(feature.properties['area_km2_inside'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">density_inside</th>\
-                        <td>' + (feature.properties['density_inside'] !== null ? autolinker.link(feature.properties['density_inside'].toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['Buffer Population Density'] !== null ? autolinker.link(feature.properties['density_inside'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
