@@ -26,6 +26,9 @@ Data:
 
 [the map](/Darspatialanalysis/assets/)
 
+[Figure 1. wards density](/Darspatialanalysis/assets/warddensitymap1.png)
+Figure 1.
+
 Abstract for map:
 
 The presence of green spaces such as parks, gardens, beaches, trees, and fields is common in many cities across the world, and can contribute to increased quality of life, etc etc.
