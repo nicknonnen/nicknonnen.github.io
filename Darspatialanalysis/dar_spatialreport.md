@@ -26,7 +26,7 @@ Data:
 
 [the map](/Darspatialanalysis/assets/)
 
-[Figure 1. wards density](/Darspatialanalysis/assets/warddensitymap1.png)
+![Figure 1. wards density](/Darspatialanalysis/assets/warddensitymap1.png)
 Figure 1.
 
 Abstract for map:
