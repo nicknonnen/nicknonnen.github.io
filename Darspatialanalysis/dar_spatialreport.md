@@ -27,7 +27,13 @@ Data:
 [the map](/Darspatialanalysis/assets/)
 
 ![Figure 1. wards density](/Darspatialanalysis/assets/warddensitymap1.png)
-Figure 1.
+Figure 1. Pop density by wards
+
+![Figure 2. green space points](/Darspatialanalysis/assets/greenspacepointsmap1.png)
+Figure 2. Green Space presence
+
+![Figure 3. pop density in buffer zones](/Darspatialanalysis/assets/bufferdensitymap1.png)
+Figure 3. Pop density inside buffer zones
 
 Abstract for map:
 
