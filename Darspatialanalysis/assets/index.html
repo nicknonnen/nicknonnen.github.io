@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/leaflet-measure.css">
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title>Population Density in Relation to Urban Green Space in Dar es Salaam</title>
+    </head>
+    <body>
+        <div id="map">
+        </div>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/rbush.min.js"></script>
+        <script src="js/labelgun.min.js"></script>
+        <script src="js/labels.js"></script>
+        <script src="js/leaflet-measure.js"></script>
+        <script src="data/PopulationDensitybyCityWard_1.js"></script>
+        <script src="data/PopulationDensitynearGreenSpaces_2.js"></script>
+        <script src="data/UrbanGreenSpaces_3.js"></script>
+        <script>
+        var highlightLayer;
+        function highlightFeature(e) {
+            highlightLayer = e.target;
+            highlightLayer.openPopup();
+        }
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:28, minZoom:1
+        })
+        var hash = new L.Hash(map);
+        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
+        var measureControl = new L.Control.Measure({
+            position: 'topleft',
+            primaryLengthUnit: 'meters',
+            secondaryLengthUnit: 'kilometers',
+            primaryAreaUnit: 'sqmeters',
+            secondaryAreaUnit: 'hectares'
+        });
+        measureControl.addTo(map);
+        document.getElementsByClassName('leaflet-control-measure-toggle')[0]
+        .innerHTML = '';
+        document.getElementsByClassName('leaflet-control-measure-toggle')[0]
+        .className += ' fas fa-ruler';
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {
+            if (bounds_group.getLayers().length) {
+                map.fitBounds(bounds_group.getBounds());
+            }
+        }
+        map.createPane('pane_OpenStreetMap_0');
+        map.getPane('pane_OpenStreetMap_0').style.zIndex = 400;
+        var layer_OpenStreetMap_0 = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            pane: 'pane_OpenStreetMap_0',
+            opacity: 1.0,
+            attribution: '',
+            minZoom: 1,
+            maxZoom: 28,
+            minNativeZoom: 0,
+            maxNativeZoom: 19
+        });
+        layer_OpenStreetMap_0;
+        map.addLayer(layer_OpenStreetMap_0);
+        function pop_PopulationDensitybyCityWard_1(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if (typeof layer.closePopup == 'function') {
+                        layer.closePopup();
+                    } else {
+                        layer.eachLayer(function(feature){
+                            feature.closePopup()
+                        });
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">id</th>\
+                        <td>' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['fid'] !== null ? autolinker.link(feature.properties['fid'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">ward_name</th>\
+                        <td>' + (feature.properties['ward_name'] !== null ? autolinker.link(feature.properties['ward_name'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['ward_code'] !== null ? autolinker.link(feature.properties['ward_code'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['district_n'] !== null ? autolinker.link(feature.properties['district_n'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['district_c'] !== null ? autolinker.link(feature.properties['district_c'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['region_nam'] !== null ? autolinker.link(feature.properties['region_nam'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['region_cod'] !== null ? autolinker.link(feature.properties['region_cod'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['totalpop'] !== null ? autolinker.link(feature.properties['totalpop'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['male'] !== null ? autolinker.link(feature.properties['male'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['female'] !== null ? autolinker.link(feature.properties['female'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">area_km2</th>\
+                        <td>' + (feature.properties['area_km2'] !== null ? autolinker.link(feature.properties['area_km2'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['floodarea_km2'] !== null ? autolinker.link(feature.properties['floodarea_km2'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['percent_flooded'] !== null ? autolinker.link(feature.properties['percent_flooded'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">pop_density</th>\
+                        <td>' + (feature.properties['pop_density'] !== null ? autolinker.link(feature.properties['pop_density'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_PopulationDensitybyCityWard_1_0(feature) {
+            if (feature.properties['pop_density'] >= 0.000000 && feature.properties['pop_density'] <= 1.382820 ) {
+                return {
+                pane: 'pane_PopulationDensitybyCityWard_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 2.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(247,252,245,1.0)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['pop_density'] >= 1.382820 && feature.properties['pop_density'] <= 4.619932 ) {
+                return {
+                pane: 'pane_PopulationDensitybyCityWard_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 2.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(202,234,195,1.0)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['pop_density'] >= 4.619932 && feature.properties['pop_density'] <= 11.423460 ) {
+                return {
+                pane: 'pane_PopulationDensitybyCityWard_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 2.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(123,200,124,1.0)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['pop_density'] >= 11.423460 && feature.properties['pop_density'] <= 20.582779 ) {
+                return {
+                pane: 'pane_PopulationDensitybyCityWard_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 2.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(42,146,74,1.0)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['pop_density'] >= 20.582779 && feature.properties['pop_density'] <= 47.283405 ) {
+                return {
+                pane: 'pane_PopulationDensitybyCityWard_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 2.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(0,68,27,1.0)',
+                interactive: true,
+            }
+            }
+        }
+        map.createPane('pane_PopulationDensitybyCityWard_1');
+        map.getPane('pane_PopulationDensitybyCityWard_1').style.zIndex = 401;
+        map.getPane('pane_PopulationDensitybyCityWard_1').style['mix-blend-mode'] = 'normal';
+        var layer_PopulationDensitybyCityWard_1 = new L.geoJson(json_PopulationDensitybyCityWard_1, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_PopulationDensitybyCityWard_1',
+            layerName: 'layer_PopulationDensitybyCityWard_1',
+            pane: 'pane_PopulationDensitybyCityWard_1',
+            onEachFeature: pop_PopulationDensitybyCityWard_1,
+            style: style_PopulationDensitybyCityWard_1_0,
+        });
+        bounds_group.addLayer(layer_PopulationDensitybyCityWard_1);
+        map.addLayer(layer_PopulationDensitybyCityWard_1);
+        function pop_PopulationDensitynearGreenSpaces_2(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if (typeof layer.closePopup == 'function') {
+                        layer.closePopup();
+                    } else {
+                        layer.eachLayer(function(feature){
+                            feature.closePopup()
+                        });
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">id</th>\
+                        <td>' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">total_ct</th>\
+                        <td>' + (feature.properties['total_ct'] !== null ? autolinker.link(feature.properties['total_ct'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">area_km2_inside</th>\
+                        <td>' + (feature.properties['area_km2_inside'] !== null ? autolinker.link(feature.properties['area_km2_inside'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">density_inside</th>\
+                        <td>' + (feature.properties['density_inside'] !== null ? autolinker.link(feature.properties['density_inside'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_PopulationDensitynearGreenSpaces_2_0(feature) {
+            if (feature.properties['density_inside'] >= 0.001288 && feature.properties['density_inside'] <= 0.349143 ) {
+                return {
+                pane: 'pane_PopulationDensitynearGreenSpaces_2',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(247,251,255,1.0)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['density_inside'] >= 0.349143 && feature.properties['density_inside'] <= 0.758038 ) {
+                return {
+                pane: 'pane_PopulationDensitynearGreenSpaces_2',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(200,221,240,1.0)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['density_inside'] >= 0.758038 && feature.properties['density_inside'] <= 1.503677 ) {
+                return {
+                pane: 'pane_PopulationDensitynearGreenSpaces_2',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(115,179,216,1.0)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['density_inside'] >= 1.503677 && feature.properties['density_inside'] <= 3.310714 ) {
+                return {
+                pane: 'pane_PopulationDensitynearGreenSpaces_2',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(40,121,185,1.0)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['density_inside'] >= 3.310714 && feature.properties['density_inside'] <= 4.617006 ) {
+                return {
+                pane: 'pane_PopulationDensitynearGreenSpaces_2',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(8,48,107,1.0)',
+                interactive: true,
+            }
+            }
+        }
+        map.createPane('pane_PopulationDensitynearGreenSpaces_2');
+        map.getPane('pane_PopulationDensitynearGreenSpaces_2').style.zIndex = 402;
+        map.getPane('pane_PopulationDensitynearGreenSpaces_2').style['mix-blend-mode'] = 'normal';
+        var layer_PopulationDensitynearGreenSpaces_2 = new L.geoJson(json_PopulationDensitynearGreenSpaces_2, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_PopulationDensitynearGreenSpaces_2',
+            layerName: 'layer_PopulationDensitynearGreenSpaces_2',
+            pane: 'pane_PopulationDensitynearGreenSpaces_2',
+            onEachFeature: pop_PopulationDensitynearGreenSpaces_2,
+            style: style_PopulationDensitynearGreenSpaces_2_0,
+        });
+        bounds_group.addLayer(layer_PopulationDensitynearGreenSpaces_2);
+        map.addLayer(layer_PopulationDensitynearGreenSpaces_2);
+        function pop_UrbanGreenSpaces_3(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if (typeof layer.closePopup == 'function') {
+                        layer.closePopup();
+                    } else {
+                        layer.eachLayer(function(feature){
+                            feature.closePopup()
+                        });
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['osm_id'] !== null ? autolinker.link(feature.properties['osm_id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_UrbanGreenSpaces_3_0() {
+            return {
+                pane: 'pane_UrbanGreenSpaces_3',
+                radius: 2.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(164,113,88,1.0)',
+                interactive: false,
+            }
+        }
+        map.createPane('pane_UrbanGreenSpaces_3');
+        map.getPane('pane_UrbanGreenSpaces_3').style.zIndex = 403;
+        map.getPane('pane_UrbanGreenSpaces_3').style['mix-blend-mode'] = 'normal';
+        var layer_UrbanGreenSpaces_3 = new L.geoJson(json_UrbanGreenSpaces_3, {
+            attribution: '',
+            interactive: false,
+            dataVar: 'json_UrbanGreenSpaces_3',
+            layerName: 'layer_UrbanGreenSpaces_3',
+            pane: 'pane_UrbanGreenSpaces_3',
+            onEachFeature: pop_UrbanGreenSpaces_3,
+            pointToLayer: function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.circleMarker(latlng, style_UrbanGreenSpaces_3_0(feature));
+            },
+        });
+        bounds_group.addLayer(layer_UrbanGreenSpaces_3);
+        map.addLayer(layer_UrbanGreenSpaces_3);
+            var title = new L.Control();
+            title.onAdd = function (map) {
+                this._div = L.DomUtil.create('div', 'info');
+                this.update();
+                return this._div;
+            };
+            title.update = function () {
+                this._div.innerHTML = '<h2>Population Density in Relation to Urban Green Space in Dar es Salaam</h2>';
+            };
+            title.addTo(map);
+        var baseMaps = {};
+        L.control.layers(baseMaps,{'<img src="legend/UrbanGreenSpaces_3.png" /> Urban Green Spaces': layer_UrbanGreenSpaces_3,'Population Density near Green Spaces<br /><table><tr><td style="text-align: center;"><img src="legend/PopulationDensitynearGreenSpaces_2_00350.png" /></td><td>0 - 0.35</td></tr><tr><td style="text-align: center;"><img src="legend/PopulationDensitynearGreenSpaces_2_0350761.png" /></td><td>0.35 - 0.76</td></tr><tr><td style="text-align: center;"><img src="legend/PopulationDensitynearGreenSpaces_2_076152.png" /></td><td>0.76 - 1.5</td></tr><tr><td style="text-align: center;"><img src="legend/PopulationDensitynearGreenSpaces_2_153313.png" /></td><td>1.5 - 3.31</td></tr><tr><td style="text-align: center;"><img src="legend/PopulationDensitynearGreenSpaces_2_3314624.png" /></td><td>3.31 - 4.62</td></tr></table>': layer_PopulationDensitynearGreenSpaces_2,'Population Density by City Ward<br /><table><tr><td style="text-align: center;"><img src="legend/PopulationDensitybyCityWard_1_0140.png" /></td><td>0 - 1.4</td></tr><tr><td style="text-align: center;"><img src="legend/PopulationDensitybyCityWard_1_14461.png" /></td><td>1.4 - 4.6</td></tr><tr><td style="text-align: center;"><img src="legend/PopulationDensitybyCityWard_1_461142.png" /></td><td>4.6 - 11.4</td></tr><tr><td style="text-align: center;"><img src="legend/PopulationDensitybyCityWard_1_1142063.png" /></td><td>11.4 - 20.6</td></tr><tr><td style="text-align: center;"><img src="legend/PopulationDensitybyCityWard_1_2064734.png" /></td><td>20.6 - 47.3</td></tr></table>': layer_PopulationDensitybyCityWard_1,"OpenStreetMap": layer_OpenStreetMap_0,},{collapsed:false}).addTo(map);
+        setBounds();
+        </script>
+    </body>
+</html>
