@@ -94,52 +94,19 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">id</th>\
-                        <td>' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['fid'] !== null ? autolinker.link(feature.properties['fid'].toLocaleString()) : '') + '</td>\
+                        <td>Ward ID: ' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">ward_name</th>\
-                        <td>' + (feature.properties['ward_name'] !== null ? autolinker.link(feature.properties['ward_name'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['ward_code'] !== null ? autolinker.link(feature.properties['ward_code'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['district_n'] !== null ? autolinker.link(feature.properties['district_n'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['district_c'] !== null ? autolinker.link(feature.properties['district_c'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['region_nam'] !== null ? autolinker.link(feature.properties['region_nam'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['region_cod'] !== null ? autolinker.link(feature.properties['region_cod'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['totalpop'] !== null ? autolinker.link(feature.properties['totalpop'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['male'] !== null ? autolinker.link(feature.properties['male'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['female'] !== null ? autolinker.link(feature.properties['female'].toLocaleString()) : '') + '</td>\
+                        <td>Ward Name: ' + (feature.properties['ward_name'] !== null ? autolinker.link(feature.properties['ward_name'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">area_km2</th>\
-                        <td>' + (feature.properties['area_km2'] !== null ? autolinker.link(feature.properties['area_km2'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['floodarea_km2'] !== null ? autolinker.link(feature.properties['floodarea_km2'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['percent_flooded'] !== null ? autolinker.link(feature.properties['percent_flooded'].toLocaleString()) : '') + '</td>\
+                        <td>Ward Area: ' + (feature.properties['area_km2'] !== null ? autolinker.link(feature.properties['area_km2'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">pop_density</th>\
-                        <td>' + (feature.properties['pop_density'] !== null ? autolinker.link(feature.properties['pop_density'].toLocaleString()) : '') + '</td>\
+                        <td> Ward Density: ' + (feature.properties['pop_density'] !== null ? autolinker.link(feature.properties['pop_density'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
