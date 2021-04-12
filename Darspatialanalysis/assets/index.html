@@ -101,7 +101,7 @@
                         <td>' + (feature.properties['ward_name'] !== null ? autolinker.link(feature.properties['ward_name'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">Ward Area</th>\
+                        <th scope="row">Ward Area, km2</th>\
                         <td>' + (feature.properties['area_km2'] !== null ? autolinker.link(feature.properties['area_km2'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -218,19 +218,19 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                        <th scope="row">id</th>\
+                        <th scope="row">Buffer ID</th>\
                         <td>' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">total_ct</th>\
+                        <th scope="row">Total Buffer Pop</th>\
                         <td>' + (feature.properties['total_ct'] !== null ? autolinker.link(feature.properties['total_ct'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">area_km2_inside</th>\
+                        <th scope="row">Buffer Area, km2</th>\
                         <td>' + (feature.properties['area_km2_inside'] !== null ? autolinker.link(feature.properties['area_km2_inside'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">density_inside</th>\
+                        <th scope="row">Buffer Density</th>\
                         <td>' + (feature.properties['density_inside'] !== null ? autolinker.link(feature.properties['density_inside'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
