@@ -40,23 +40,20 @@ These results show that there is a general positive correlation between high-den
 
 There are a few notable exceptions to this pattern. A range of third-quintile buffer zones are found just to the northeast of the city center clusters, representing a noticeable beachfront community. More examples may be seen in the western-most wards of the city, where a few fourth- and third-quintile buffer zones linger even as the overall ward density drops to second- and first-quintiles.
 
-In conclusion, the results of this analysis simply suggest that urban green space has been incorporated in regions of the city where population density is already high. ***add bit about why urban green space is beneficial here to polich off this section***
+In conclusion, the results of this analysis simply suggest that urban green space has been incorporated in regions of the city where population density is already high. ***add bit about why urban green space is beneficial here to polish off this section***
 
 ![Figure 1. wards density](/Darspatialanalysis/assets/warddensitymap2.png)
-Figure 1. Population density by city ward in Dar es Salaam in 
+Figure 1. Population density by city ward in Dar es Salaam in ____. Data obtained from Resilience Academy and OSM (Basemap: OSM).
 
 ![Figure 2. green space points](/Darspatialanalysis/assets/greenspacepointsmap1.png)
-Figure 2. Green Space presence
+Figure 2. Green space in Dar es Salaam in ____, represented as points. Data obtained from Resilience Academy and OSM (Basemap: OSM).
 
 ![Figure 3. pop density in buffer zones](/Darspatialanalysis/assets/bufferdensitymap1.png)
-Figure 3. Pop density inside buffer zones
+Figure 3. Population density by green space buffer zone in Dar es Salaam in ____. Data obtained from Resilience Academy and OSM (Basemap: OSM).
 
-Abstract for map:
+## References
 
-The presence of green spaces such as parks, gardens, beaches, trees, and fields is common in many cities across the world, and can contribute to increased quality of life, etc etc.
-  - correlation between green space and where people live?
-  - could this indicate higher resilience?
-
+Schuurman, N. 2008. Database Ethnographies Using Social Science Methodologies to Enhance Data Analysis and Interpretation. Geography Compass 2 (5):1529–1548. [https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1749-8198.2008.00150.x](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1749-8198.2008.00150.x)
 
 ABSTRACT
 
