@@ -18,14 +18,10 @@ Lab report should include:
 4 - Results (interpretation, with link to Leaflet map and any static maps)
 ```
 
-Goal: Compare population density (using buildings as a proxy) inside and outside buffer zones surrounding urban green space within Dar es Salaam
-
-QUESTION: is pop density greater inside buffer zones compared to pop density in city wards?
-
-
 ## Background Question
 
 Understanding and improving urban resilience around the world is paramount in preparing human population hubs for changing climates in the near future. In this analysis, I implemented SQL queries in PostGIS to analyze and better understand certain aspects of urban resilience in the eastern African city of Dar es Salaam, Tanzania. I was interested in how urban green space affected population spatial distribution, so my guiding question was, "is population density greater in areas closer to urban green space compared to farther away?"
+
 
 ## Data
 
