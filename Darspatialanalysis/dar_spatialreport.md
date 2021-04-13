@@ -25,12 +25,23 @@ Understanding and improving urban resilience around the world is paramount in pr
 
 ## Data
 
-The data for this exercise was
+The data for this exercise was obtained from [Open Street Map (OSM)](https://www.openstreetmap.org/#map=15/44.0703/-73.1703) and the [Resilience Academy](https://resilienceacademy.ac.tz).
 
-Data:
-- obtained from the Resilience Academy
-- include more fleshed out data ethnography there
+OSM is an open source public mapping effort aimed at creating accessible and accurate mapping data all over the world. Data is contributed by local parties and may be of any type. OSM data is tagged with a timestamp and username, and so it appears much of the data used in this analysis was contributed by members of [Ramani Huria](https://ramanihuria.org/en/), a local Dar es Salaam mapping effort focused on collecting flood data and improving the city's flood resilience.
 
+[Ramani Huria](https://ramanihuria.org/en/) itself is just one initiative of the larger organization the [Resilience Academy](https://resilienceacademy.ac.tz), a program bringing together five academic institutions in Tanzania and Finland in order to improve social capacity to tackle changing climate and urban challenges. Resilience Academy is providing inclusive and comprehensive mapping and digital knowledge, skills, and tools to students and partners, with the aim of improving urban planning and design, climate response models and practices, and infrastructure for developing cities in Tanzania and beyond.
+
+Specific data used in this analysis includes:
+- [wards](https://geonode.resilienceacademy.ac.tz/layers/geonode_data:geonode:dar_es_salaam_administrative_wards): adminstrative wards in Dar es Salaam, 2018
+- [landuse](https://geonode.resilienceacademy.ac.tz/layers/geonode_data:geonode:dar_es_salaam_open_areas0): land use in Dar es Salaam, 2019
+- [buildings](https://geonode.resilienceacademy.ac.tz/layers/geonode_data:geonode:building_thumnails_2): buildings in Dar es Salaam, 2019
+
+
+## Methods
+
+This exercise was as much an exercise in SQL literacy and open-source science as an analysis in urban resilience. Therefore, extra effort has been allocated into developing an accessible and reproducible workflow that can be replicated in PostGIS - using the [OSM2PGSQL tool](https://ramanihuria.org/en/) - and used as an effective SQL teaching mechanism.
+
+The first step to this analysis was obtaining data from the Resilience Academy ...
 
 ## Results
 
@@ -43,13 +54,13 @@ There are a few notable exceptions to this pattern. A range of third-quintile bu
 In conclusion, the results of this analysis simply suggest that urban green space has been incorporated in regions of the city where population density is already high. ***add bit about why urban green space is beneficial here to polish off this section***
 
 ![Figure 1. wards density](/Darspatialanalysis/assets/warddensitymap2.png)
-Figure 1. Population density by city ward in Dar es Salaam in ____. Data obtained from Resilience Academy and OSM (Basemap: OSM).
+Figure 1. Population density by city ward in Dar es Salaam in 2018. Data obtained from Resilience Academy and OSM (Basemap: OSM).
 
 ![Figure 2. green space points](/Darspatialanalysis/assets/greenspacepointsmap1.png)
-Figure 2. Green space in Dar es Salaam in ____, represented as points. Data obtained from Resilience Academy and OSM (Basemap: OSM).
+Figure 2. Green space in Dar es Salaam in 2019, represented as points. Data obtained from Resilience Academy and OSM (Basemap: OSM).
 
 ![Figure 3. pop density in buffer zones](/Darspatialanalysis/assets/bufferdensitymap1.png)
-Figure 3. Population density by green space buffer zone in Dar es Salaam in ____. Data obtained from Resilience Academy and OSM (Basemap: OSM).
+Figure 3. Population density by green space buffer zone in Dar es Salaam in 2019. Data obtained from Resilience Academy and OSM (Basemap: OSM).
 
 ## References
 
