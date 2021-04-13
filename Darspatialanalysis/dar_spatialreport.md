@@ -8,8 +8,20 @@ title: Spatial Urban Resilience Analysis in Dar es Salaam
 Produced by Nick Nonnenmacher
 
 Created `03/31/2021`
-
 Revised `04/12/2021`
+
+```
+Lab report should include:
+1 - question
+2 - data, data citations, data descriptions (ethnography)
+3 - methods (verbal description of analysis with SQL code blocks, with sufficient explanation and detail to be reproduced)
+4 - Results (interpretation, with link to Leaflet map and any static maps)
+```
+
+Goal: Compare population density (using buildings as a proxy) inside and outside buffer zones surrounding urban green space within Dar es Salaam
+
+QUESTION: is pop density greater inside buffer zones compared to pop density in city wards?
+
 
 ## Background Question
 
@@ -18,16 +30,6 @@ Understanding and improving urban resilience around the world is paramount in pr
 ## Data
 
 The data for this exercise was
-
-Lab report should include:
-1 - question
-2 - data, data citations, data descriptions (ethnography)
-3 - methods (verbal description of analysis with SQL code blocks, with sufficient explanation and detail to be reproduced)
-4 - Results (interpretation, with link to Leaflet map and any static maps)
-
-Goal: Compare population density (using buildings as a proxy) inside and outside buffer zones surrounding urban green space within Dar es Salaam
-
-QUESTION: is pop density greater inside buffer zones compared to pop density in city wards?
 
 Data:
 - obtained from the Resilience Academy
