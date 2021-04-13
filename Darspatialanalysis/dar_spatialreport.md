@@ -5,9 +5,19 @@ title: Spatial Urban Resilience Analysis in Dar es Salaam
 
 **Spatial Urban Resilience Analysis in Dar es Salaam**
 
-Nick Nonnenmacher
-Created 03/31/2021
-Revised 04/__/2021
+Produced by Nick Nonnenmacher
+
+Created `03/31/2021`
+
+Revised `04/12/2021`
+
+## Background Question
+
+Understanding and improving urban resilience around the world is paramount in preparing human population hubs for changing climates in the near future. In this analysis, I implemented SQL queries in PostGIS to analyze and better understand certain aspects of urban resilience in the eastern African city of Dar es Salaam, Tanzania. I was interested in how urban green space affected population spatial distribution, so my guiding question was, "is population density greater in areas closer to urban green space compared to farther away?"
+
+## Data
+
+The data for this exercise was
 
 Lab report should include:
 1 - question
