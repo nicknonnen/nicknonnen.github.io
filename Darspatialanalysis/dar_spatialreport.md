@@ -7,8 +7,8 @@ title: Spatial Urban Resilience Analysis in Dar es Salaam
 
 Produced by Nick Nonnenmacher
 
-Created `03/31/2021`
-Revised `04/12/2021`
+Created - `03/31/2021`
+Revised - `04/12/2021`
 
 ```
 Lab report should include:
@@ -32,7 +32,13 @@ Data:
 - include more fleshed out data ethnography there
 
 
-[the map](/Darspatialanalysis/assets/)
+## Results
+
+Here is a map [summarizing population density distribution in relation to green space in Dar es Salaam.](/Darspatialanalysis/assets/)
+
+These results show that there is a general positive correlation between high-density wards and high-density buffer zones - implying urban green space does not significantly influence proximate population density. As seen in Figures 1 and 2, the highest-density wards are situated in the center of the city along the coastline, and overlap with the major cluster of urban green points. This is further supported in Figure 3, where the darkest-blue buffer zones are most represented in the same city center region.
+
+There are a few notable exceptions to this pattern. A range of third-quintile buffer zones are found just to the northeast of the city center clusters, representing a noticeable beachfront community. More examples may be seen in the western-most wards of the city, where a few fourth- and third-quintile buffer zones linger even as the overall ward density drops to second- and first-quintiles. 
 
 ![Figure 1. wards density](/Darspatialanalysis/assets/warddensitymap2.png)
 Figure 1. Pop density by wards
