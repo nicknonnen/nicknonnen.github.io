@@ -43,6 +43,16 @@ This exercise was as much an exercise in SQL literacy and open-source science as
 
 The first step to this analysis was obtaining data from the Resilience Academy ...
 
+Next, I created new tables in my personal schema containing building and greenspace information. talk about what I considered greenspace
+
+Then, I created the buffer zones around each greenspace point in the city. I chose the arbitrary distance of 500m to create these buffers.
+
+Next, I distinguished which buildings were inside and outside the buffer zones.
+
+Then, I calculated the total city area inside each of the 42 buffer zones.
+
+Next, I joined the building points and polygons, 
+
 ## Results
 
 Here is a map [summarizing population density distribution in relation to green space in Dar es Salaam.](/Darspatialanalysis/assets/)
