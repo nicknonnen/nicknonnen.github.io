@@ -228,9 +228,20 @@ Figure 3. Population density by green space buffer zone in Dar es Salaam in 2019
 
 In conclusion, the results of this analysis simply suggest that urban green space has been incorporated in regions of the city where population density is already high. Past studies have demonstrated there may be direct and indirect human health benefits to increasing the abundance of nature and natural places in modern urban space (van Leeuwen, Nijkamp, and de Norohna Vaz 2011, Lee and Maheswaran 2011, De Ridder et al 2004), and this may prove even more significant in rapidly-developing cities such as Dar es Salaam. Green spaces have been shown to provide cooling effects in dense urban centers, enhance local air quality, and even improve the use of nearby farmland (van Leeuwen, Nijkamp, and de Norohna Vaz 2011). As Dar es Salaam continues to grow in size and population over the next decade, pointed effort must be devoted to the city's infrastrcture and use of natural resources in order to provide a safe and healthy economic and cultural hub for Tanzania and east Africa.
 
+## Acknowledgements
+
+Thank you to Professor Joe Holler of Middlebury College for organizing this exercise and providing easily-accessible data and SQL exercises to aid myself and my GEOG 323 classmates in completing our analyses. Thank you also to my classmates for their help during this analysis. In addition, map data featured in this analysis is provided by OSM and the many users who contribute to it. 
+
 ## References
 
+De Ridder, K., Adamec, V., Bañuleos, A., Bruse, M., Bürger, M., Damsgaard, O., Dufek, J., Hirsch, J., Lefebre, F., Pérez-Larcorzana, J.M., Thierry, A., and C. Weber. 2004. An integreated methodology to assess the benefits of urban green space. Science of the Total Environment 334-335:489-497. [https://doi.org/10.1016/j.scitotenv.2004.04.054](https://doi.org/10.1016/j.scitotenv.2004.04.054)
+
+Lee, A.C.K. and R. Maheswaran. 2011. The health benefits of urban green spaces: a review of the evidence. Journal of Public Health 33(5):212-222. [https://doi.org/10.1093/pubmed/fdq068](https://doi.org/10.1093/pubmed/fdq068)
+
 Schuurman, N. 2008. Database Ethnographies Using Social Science Methodologies to Enhance Data Analysis and Interpretation. Geography Compass 2 (5):1529–1548. [https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1749-8198.2008.00150.x](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1749-8198.2008.00150.x)
+
+van Leeuwen, E., Nijkamp, P., and T. de Norohna Vaz. 2011. The multifunctional use of urban green space. International Journal of Agricultural Sustainability 8(1-2):20-25. [https://doi.org/10.3763/ijas.2009.0466](https://doi.org/10.3763/ijas.2009.0466)
+
 
 ABSTRACT
 
