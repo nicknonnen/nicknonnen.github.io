@@ -230,7 +230,7 @@ In conclusion, the results of this analysis simply suggest that urban green spac
 
 ## Acknowledgements
 
-Thank you to Professor Joe Holler of Middlebury College for organizing this exercise and providing easily-accessible data and SQL exercises to aid myself and my GEOG 323 classmates in completing our analyses. Thank you also to my classmates for their help during this analysis. In addition, map data featured in this analysis is provided by OSM and the many users who contribute to it. 
+Thank you to Professor Joe Holler of Middlebury College for organizing this exercise and providing easily-accessible data and SQL exercises to aid myself and my GEOG 323 classmates in completing our analyses. Thank you also to my classmates for their help during this analysis. In addition, map data featured in this analysis is provided by OSM and the many users who contribute to it.
 
 ## References
 
@@ -241,8 +241,3 @@ Lee, A.C.K. and R. Maheswaran. 2011. The health benefits of urban green spaces: 
 Schuurman, N. 2008. Database Ethnographies Using Social Science Methodologies to Enhance Data Analysis and Interpretation. Geography Compass 2 (5):1529–1548. [https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1749-8198.2008.00150.x](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1749-8198.2008.00150.x)
 
 van Leeuwen, E., Nijkamp, P., and T. de Norohna Vaz. 2011. The multifunctional use of urban green space. International Journal of Agricultural Sustainability 8(1-2):20-25. [https://doi.org/10.3763/ijas.2009.0466](https://doi.org/10.3763/ijas.2009.0466)
-
-
-ABSTRACT
-
-Placement of solid waste sites near water transmission features (“waterways”) such as rivers, streams, canals, drains, and ditches can lead to flooding during rain events if these waste collections block water transmission and egress. Not only can this result in flooding, but it can also lead to increased contact between humans and pathogens, toxins, and other environmental hazards. In this analysis we identify waste collection sites within 50 meters of water transmission features as potentially dangerous waste sites and calculate the density of dangerous waste sites for each ward in Dar es Salaam to identify spatial distribution of environmental vulnerability.
