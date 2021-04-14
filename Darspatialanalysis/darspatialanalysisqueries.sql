@@ -12,7 +12,7 @@ Data:
 
 Procedure:
 
-1. Create new tables in 'nick' schema
+Create new tables in 'nick' schema
 
 CREATE TABLE darbuildings AS
 SELECT osm_id, st_transform(way,32737)::geometry(polygon,32737) as geom, name
