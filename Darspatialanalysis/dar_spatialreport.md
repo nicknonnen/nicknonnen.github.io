@@ -10,14 +10,6 @@ Produced by Nick Nonnenmacher
 Created - `03/31/2021`
 Revised - `04/13/2021`
 
-```
-Lab report should include:
-1 - question
-2 - data, data citations, data descriptions (ethnography)
-3 - methods (verbal description of analysis with SQL code blocks, with sufficient explanation and detail to be reproduced)
-4 - Results (interpretation, with link to Leaflet map and any static maps)
-```
-
 ## Background Question
 
 Understanding and improving urban resilience around the world is paramount in preparing human population hubs for changing climates in the near future. In this analysis, I implemented SQL queries in PostGIS to analyze and better understand certain aspects of urban resilience in the eastern African city of Dar es Salaam, Tanzania. I was interested in how urban green space affected population spatial distribution, so my guiding question was, "is population density greater in areas closer to urban green space compared to farther away?"
@@ -234,7 +226,7 @@ Figure 2. Green space in Dar es Salaam in 2019, represented as points. Data obta
 ![Figure 3. pop density in buffer zones](/Darspatialanalysis/assets/bufferdensitymap1.png)
 Figure 3. Population density by green space buffer zone in Dar es Salaam in 2019. Data obtained from Resilience Academy and OSM (Basemap: OSM).
 
-In conclusion, the results of this analysis simply suggest that urban green space has been incorporated in regions of the city where population density is already high. Past studies have demonstrated there may be direct and indirect human health benefits to increasing the abundance of nature and natural places in modern urban space (van Leeuwen, Nijkamp, and de Norohna Vaz 2011, Lee and Maheswaran 2011, De Ridder et al 2004), and this may prove even more significant in rapidly-developing cities such as Dar es Salaam. Green spaces have been shown to provide cooling effects in dense urban centers, enhance local air quality, and even improve the use of nearby farmland (van Leeuwen, Nijkamp, and de Norohna Vaz 2011). As Dar es Salaam continues to grow in size and population over the next decade, pointed effort must be devoted to the city's infrastrcture and use of natural resources in order to provide a safe and healthy economic and cultural hub for Tanzania and east Africa. 
+In conclusion, the results of this analysis simply suggest that urban green space has been incorporated in regions of the city where population density is already high. Past studies have demonstrated there may be direct and indirect human health benefits to increasing the abundance of nature and natural places in modern urban space (van Leeuwen, Nijkamp, and de Norohna Vaz 2011, Lee and Maheswaran 2011, De Ridder et al 2004), and this may prove even more significant in rapidly-developing cities such as Dar es Salaam. Green spaces have been shown to provide cooling effects in dense urban centers, enhance local air quality, and even improve the use of nearby farmland (van Leeuwen, Nijkamp, and de Norohna Vaz 2011). As Dar es Salaam continues to grow in size and population over the next decade, pointed effort must be devoted to the city's infrastrcture and use of natural resources in order to provide a safe and healthy economic and cultural hub for Tanzania and east Africa.
 
 ## References
 
