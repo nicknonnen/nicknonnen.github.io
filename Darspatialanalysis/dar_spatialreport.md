@@ -138,11 +138,81 @@ features outside buffer zones = 1,092,527
 */
 ```
 
-Then, I calculated the total city area inside each of the 42 buffer zones, and the total city area of each of the 95 individual city wards. This would give me a rough estimate of
+Then, I calculated the total city area inside each of the 42 buffer zones, and the total city area of each of the 95 individual city wards.
 
+```
+ALTER TABLE darbuildings
+ADD COLUMN greenbuffer
 
+UPDATE darbuildings
+SET greenbuffer = 1
+FROM greenspacebuffers
+WHERE st_intersects(darbuildings.geom, greenspacebuffers.geom);
 
-Next, I joined the building points and polygons,
+SELECT greenbuffer, count(osm_id) as n
+FROM darbuildings
+GROUP BY greenbuffer
+ORDER BY n DESC;
+
+/*
+now we explicitly know which buildings are within the buffer zones and which aren't
+total features in darbuilings = 1,358,546
+features within buffer zones = 266,142
+features outside buffer zones = 1,092,527
+*/
+```
+
+Then, I calculated the area of the buffer zones and the city wards.
+
+```
+ALTER TABLE greenspacebuffers
+ADD COLUMN area_km2_buffers real;
+
+UPDATE greenspacebuffers
+SET area_km2_buffers = st_area(geom) / 1000;
+
+/* this will give us the area of each of the 42 buffer zones */
+
+ALTER TABLE wards2
+ADD COLUMN area_km2 real;
+
+UPDATE wards2
+SET area_km2 = st_area(utmgeom)/1000;
+
+/* this will give us the area of each of the 95 city wards  */
+```
+
+The next step was the join the building points and buffer polygons. This was done with an intersect.
+
+```
+CREATE TABLE pop_density_green AS
+SELECT
+greenspacebuffers.id as id, greenspacebuffers.geom as geom1,
+COUNT(darbuildings.greenbuffer) as total_ct
+FROM greenspacebuffers
+JOIN darbuildings
+ON st_intersects(darbuildings.geom, greenspacebuffers.geom)
+GROUP BY greenspacebuffers.id;
+```
+
+Now, I know the area in square kilometers and the number of buildings within the 42 buffer zones, contained in the 'pop_density_green' table, and the area in square kilometers and the number of buildings within the 95 city wards, contained in the 'wards2' table. It only takes a simple calculation from here to create a new population density column!
+
+```
+ALTER TABLE pop_density_green
+ADD COLUMN density_inside real;
+
+UPDATE pop_density_green
+SET density_inside = pop_density_green.total_ct / pop_density_green.area_km2_inside;
+
+ALTER TABLE wards2
+ADD COLUMN percent_flooded real;
+
+UPDATE ward_flood2
+SET pop_density = wards2.totalpop / wards2.area_km2;
+```
+
+From here, I added the 'wards2' and 'pop_density_green' layers into a QGIS file and created a chloropleth map from the population density data (Figures 1 and 3). I also added the greenspace centroid points before buffers were added, to visualize where the urban green space actually is in the city in a separate map (Figure 2). An OSM Standard basemap was added to all three figures for easier viewing. Additionally, a Leaflet interactive map was created to better understand how population density changes in relation to ward and the presence of urban green spaces.
+
 
 ## Results
 
