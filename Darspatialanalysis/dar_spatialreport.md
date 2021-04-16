@@ -205,8 +205,8 @@ SET pop_density = wards2.totalpop / wards2.area_km2;
 
 From here, I added the 'wards2' and 'pop_density_green' layers into a QGIS file and created a chloropleth map from the population density data (Figures 1 and 3). I also added the greenspace centroid points before buffers were added, to visualize where the urban green space actually is in the city in a separate map (Figure 2). An OSM Standard basemap was added to all three figures for easier viewing. Additionally, a Leaflet interactive map was created to better understand how population density changes in relation to ward and the presence of urban green spaces.
 
-The .sql document containing all of my queries may be found [here](/dar spatial analysis/darspatialanalysisqueries.sql).
-The initial SQL exercise studying Dar es Salaam flood risk conducted by Joe Holler and the Middlebury College spring 2021 GEOG 323 class may be found [here](/dar spatial analysis/osm_sql.sql).
+The .sql document containing all of my queries may be found [here](/dar_spatial_analysis/darspatialanalysisqueries.sql).
+The initial SQL exercise studying Dar es Salaam flood risk conducted by Joe Holler and the Middlebury College spring 2021 GEOG 323 class may be found [here](/dar_spatial_analysis/osm_sql.sql).
 
 
 ## Results
