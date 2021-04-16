@@ -211,19 +211,19 @@ The initial SQL exercise studying Dar es Salaam flood risk conducted by Joe Holl
 
 ## Results
 
-Here is a map [summarizing population density distribution in relation to green space in Dar es Salaam.](/dar spatial analysis/assets/)
+Here is a map [summarizing population density distribution in relation to green space in Dar es Salaam.](/dar_spatial_analysis/assets/)
 
 These results show that there is a general positive correlation between high-density wards and high-density buffer zones - implying urban green space does not significantly influence proximate population density. As seen in Figures 1 and 2, the highest-density wards are situated in the center of the city along the coastline, and overlap with the major cluster of urban green points. This is further supported in Figure 3, where the darkest-blue buffer zones are most represented in the same city center region.
 
 There are a few notable exceptions to this pattern. A range of third-quintile buffer zones are found just to the northeast of the city center clusters, representing a noticeable beachfront community. More examples may be seen in the western-most wards of the city, where a few fourth- and third-quintile buffer zones linger even as the overall ward density drops to second- and first-quintiles.
 
-![Figure 1. wards density](/dar spatial analysis/assets/warddensitymap2.png)
+![Figure 1. wards density](/dar_spatial_analysis/assets/warddensitymap2.png)
 Figure 1. Population density by city ward in Dar es Salaam in 2018. Data obtained from Resilience Academy and OSM (Basemap: OSM).
 
-![Figure 2. green space points](/dar spatial analysis/assets/greenspacepointsmap1.png)
+![Figure 2. green space points](/dar_spatial_analysis/assets/greenspacepointsmap1.png)
 Figure 2. Green space in Dar es Salaam in 2019, represented as points. Data obtained from Resilience Academy and OSM (Basemap: OSM).
 
-![Figure 3. pop density in buffer zones](/dar spatial analysis/assets/bufferdensitymap1.png)
+![Figure 3. pop density in buffer zones](/dar_spatial_analysis/assets/bufferdensitymap1.png)
 Figure 3. Population density by green space buffer zone in Dar es Salaam in 2019. Data obtained from Resilience Academy and OSM (Basemap: OSM).
 
 In conclusion, the results of this analysis simply suggest that urban green space has been incorporated in regions of the city where population density is already high. Past studies have demonstrated there may be direct and indirect human health benefits to increasing the abundance of nature and natural places in modern urban space (van Leeuwen, Nijkamp, and de Norohna Vaz 2011, Lee and Maheswaran 2011, De Ridder et al 2004), and this may prove even more significant in rapidly-developing cities such as Dar es Salaam. Green spaces have been shown to provide cooling effects in dense urban centers, enhance local air quality, and even improve the use of nearby farmland (van Leeuwen, Nijkamp, and de Norohna Vaz 2011). As Dar es Salaam continues to grow in size and population over the next decade, pointed effort must be devoted to the city's infrastrcture and use of natural resources in order to provide a safe and healthy economic and cultural hub for Tanzania and east Africa.
