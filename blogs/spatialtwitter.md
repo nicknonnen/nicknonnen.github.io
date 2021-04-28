@@ -1,3 +1,8 @@
+---
+layout: page
+title: Spatial Data Analysis with Twitter
+---
+
 add notes on spatial twitter conversation and paper Hectares
 
 Wang, Z., X. Ye, and M. H. Tsou. 2016. Spatial, temporal, and content analysis of Twitter for wildfire hazards. Natural Hazards 83 (1):523–540.
