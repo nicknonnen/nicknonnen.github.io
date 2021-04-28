@@ -21,3 +21,18 @@ Analysis Methods:
 
 Results:
 - i have a few problems with the figures they use
+
+
+Class notes:
+inductive vs deductive research?
+4 analytical approaches:
+- temporal (frequency of tweets over time)
+- networks (patterns in retweets)
+- content (keywords, coding, co-occurances)
+- geography (where the actual tweets were from)
+Methodology:
+- limit search by time, geo extent, contents
+  - only single-digits % of tweets had geo coordinates
+  - lots of really general geo data (some geos from user profiles, not specific place of tweeting)
+
+Kernel Density
