@@ -193,8 +193,10 @@ Figures to Include:
 
 
 ![Fig4resilience](/malcomb/assets/Fig4rep.png)
+Figure 1. Adaptive Capacity Scores from our results (mapping access and assets data).
 
 ![resilience_comparison](/malcomb/assets/Fig4comp.png)
+Figure 2. Comparing Adaptive Capacity Score maps from our procedure (Fig 1) and from Malcomb et al. (2014) (Fig 4). 
 
 ![Fig5vulnerability](/malcomb/assets/Fig5rep.png)
 
