@@ -122,15 +122,15 @@ Drought: Physical exposition to droughts events 1980-2001
 Global estimated risk index for flood hazard
 [https://preview.grid.unep.ch/index.php?preview=data&events=floods&evcat=5&lang=eng](https://preview.grid.unep.ch/index.php?preview=data&events=floods&evcat=5&lang=eng. )
 
-
 ### Analytical Specification
 
 The original study was conducted using ArcGIS and STATA, but does not state which versions of these software were used.
 The replication study will use R 1.4.1106 and QGIS LTR 3.16.4-Hannover.
 
+
 ## Materials and Procedure
 
-The steps below may be found applied in an [R Script here](/malcomb/RP-Malcomb-nn.Rmd)
+The steps below may be found applied in an [R Script here.](/malcomb/RP-Malcomb-nn.Rmd)
 
 
 *Process Adaptive Capacity*
