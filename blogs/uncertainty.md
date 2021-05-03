@@ -17,4 +17,4 @@ Reading:
 
 Longley, P. A., M. F. Goodchild, D. J. Maguire, and D. W. Rhind. 2008. Geographical information systems and science 2nd ed. Chichester: Wiley. [(only chapter 6: Uncertainty, pages 127-153)](https://github.com/GIS4DEV/literature/blob/master/Uncertainty%20Longley%20et%20al.pdf)
 
-Submitted March 12, 2021. 
+Submitted March 12, 2021.
