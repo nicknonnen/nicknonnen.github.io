@@ -3,36 +3,16 @@ layout: page
 title: Spatial Data Analysis with Twitter
 ---
 
-add notes on spatial twitter conversation and paper Hectares
+In “Spatial, temporal, and content analysis of Twitter for wildfire hazards” (Wang et al. 2016), social media data scraped from Twitter was analyzed to determine if such real-time, on-the-ground, user-input data sources could accurately characterize natural disasters such as wildfires. A Twitter API was used to scrape, which the team conducted in two phases: the first focused on the keywords “fire” and “wildfire” while the second focused on specific wildfires and added keywords “San Marcos” and “Bernardo” - two words selected randomly from a list. This two-phase approach allowed the researchers to first collect information about general wildfires, and then about specific disaster events; this in turn allowed the researchers to analyze multiple dimensions *and* investigate the impact of geography on the spatial distribution of people’s responses. Once this data was collected, the team used a kernel-density estimation to analyze the spatial pattern of tweets, text mining to identify conversational topics, and social network analysis to detect major sources of news and opinions during disaster events (Wang et al. 2016).
 
-Wang, Z., X. Ye, and M. H. Tsou. 2016. Spatial, temporal, and content analysis of Twitter for wildfire hazards. Natural Hazards 83 (1):523–540.
+The paper contains relatively-accessible figures, which display the information collected in a decent way but not particularly elegantly. I particularly think Figures 3 and 6 could be improved with more accurate spatial location data, to represent where people lived within town boundaries instead of representing total population aggregated around the centroid. Figure 10 is particularly engaging, and its accessibility is greatly improved by the short paragraph of text at the end of Section 4.
 
-Prepare a blog post of two paragraphs answering:
+Based on how data was collected, and the relative clarity of Wang et al.’s methodology, I would consider this paper to be replicable, according to the definition set forth by the National Academies of Sciences, Engineering and Medicine. The keywords used, the temporal range investigated, and the software applied are all available in the paper, and with a certain degree of skill, a geospatial researcher could very feasibly find a similar disaster event, set a similar timeframe, and produce similar results. I hesitate to call this paper totally reproducible because of the time-sensitive nature of scraping Twitter data from free API sources.
 
-Summarize the analytical techniques applied and how the results of those techniques were communicated in text, numbers, tables, or data visualizations
-Consder whether you consider this research paper to be reproducibile and whether you consider this paper to be replicable. Refer to the National Academies of Sciences, Engineering and Medicine definitions of reproducibility and replicability and our prior discussions about GIS as a Science.
+References:
 
+National Academies of Sciences, Engineering, and Medicine. 2019. Reproducibility and Replicability in Science. Washington, D.C.: National Academies Press. [DOI: 10.17226/25303](https://www.nap.edu/catalog/25303/reproducibility-and-replicability-in-science)
 
-Analysis Methods:
-- use Twitter search API  to find wildfire-related tweets
-- keywords: "fire" and "wildfire"
-- then implemented a search based on keywords of locations where wildfires occured
-  - only used two place names as keywords (why only two??) and then had to filter these results with another check to make sure these tweets are actually talking about wildfires - why not leave it at the first keyword search?
+Wang, Z., X. Ye, and M. H. Tsou. 2016. Spatial, temporal, and content analysis of Twitter for wildfire hazards. [Natural Hazards 83 (1):523–540.](https://github.com/GIS4DEV/literature/blob/master/Spatial%20%2C%20temporal%20%2C%20and%20content%20analysis%20of%20Twitter.pdf)
 
-Results:
-- i have a few problems with the figures they use
-
-
-Class notes:
-inductive vs deductive research?
-4 analytical approaches:
-- temporal (frequency of tweets over time)
-- networks (patterns in retweets)
-- content (keywords, coding, co-occurances)
-- geography (where the actual tweets were from)
-Methodology:
-- limit search by time, geo extent, contents
-  - only single-digits % of tweets had geo coordinates
-  - lots of really general geo data (some geos from user profiles, not specific place of tweeting)
-
-Kernel Density
+Submitted May 03, 2021
