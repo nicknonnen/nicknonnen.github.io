@@ -175,6 +175,11 @@ The steps below may be found applied in an [R Script here.](/malcomb/RP-Malcomb-
 3. Reclassify the drought values (quantile [from 0 - 1 in intervals of 0.2 =5])
 4. AGGREGATE: Create final vulnerability layer using environmental vulnerability score and ta_capacity.
 
+We used this formula to calculate the final vulnerability scores. 
+```
+final = (40 - geo) * 0.40 + drought * 0.20 + flood * 0.20 + lhz_capacity * 0.20
+```
+
 Finally, we georeferenced Figures 4 and 5 from Malcomb et al. (2014) in QGIS in order to compare the original study results to those produced by the above R script. This comparison was quantitatively demonstrated through a Spearman's Rho correlation test, presented here in ***Table X.***
 
 
@@ -196,7 +201,7 @@ Figures to Include:
 Figure 1. Adaptive Capacity Scores from our results (mapping access and assets data).
 
 ![resilience_comparison](/malcomb/assets/Fig4comp.png)
-Figure 2. Comparing Adaptive Capacity Score maps from our procedure (Fig 1) and from Malcomb et al. (2014) (Fig 4). 
+Figure 2. Comparing Adaptive Capacity Score maps from our procedure (Fig 1) and from Malcomb et al. (2014) (Fig 4).
 
 ![Fig5vulnerability](/malcomb/assets/Fig5rep.png)
 
