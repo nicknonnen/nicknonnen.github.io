@@ -247,7 +247,9 @@ Provide a summary and interpretation of the key findings of the replication *vis
 - lack of details in the original analysis
 - uncertainties due to manner in which data has been used
 
+This reproduction study succeeded in producing Malawi Traditional Authority Adaptive Capacity Scores similar to the original findings of Malcomb et al. (2014), but was unable to produce satisfactorily similar Vulnerability Scores.
 
+As seen in Figures 2 and 3, Adaptive Capacity Scores for individual Traditional Authorities
 
 ## Conclusion
 
