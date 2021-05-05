@@ -180,7 +180,7 @@ final = (40 - geo) * 0.40 + drought * 0.20 + flood * 0.20 + lhz_capacity * 0.20
 ```
 
 ![malcomb table 2](/malcomb/assets/malcomb_table2.png)
-Figure 1. Weighted indicators used to calculate adaptive capacity scores by metatheme, from Malcomb et al. (2014) Table 2. 
+Figure 1. Weighted indicators used to calculate adaptive capacity scores by metatheme, from Malcomb et al. (2014) (Table 2). 
 
 Finally, we georeferenced Figures 4 and 5 from Malcomb et al. (2014) in QGIS in order to compare the original study results to those produced by the above R script. This comparison was quantitatively demonstrated through a Spearman's Rho correlation test.
 
@@ -202,16 +202,16 @@ The effort of this replication study appears to support the original findings of
 
 
 ![Fig4resilience](/malcomb/assets/Fig4rep.png)
-Figure 2. Adaptive Capacity Scores from our results (mapping access and assets data).
+Figure 2. Adaptive Capacity Scores from our reproduction results (mapping access and assets data).
 
 ![resilience_comparison](/malcomb/assets/Fig4comp.png)
-Figure 3. Comparing Adaptive Capacity Score maps from our procedure (Fig 1) and from Malcomb et al. (2014) (Fig 4).
+Figure 3. Comparing Adaptive Capacity Score maps from our procedure (Fig 2) and from Malcomb et al. (2014) (Fig 4).
 
 ![Fig5vulnerability](/malcomb/assets/Fig5rep.png)
-Figure 4.
+Figure 4. Vulnerability Scores in Malawi from our reproduction results.
 
 ![vulnerability_comparison](/malcomb/assets/Fig5comp.png)
-Figure 5.
+Figure 5. Comparing Vulnerability Scores maps from our procedure (Fig 4) and Malcomb et al. (2014) (Fig 5).
 
 ## Unplanned Deviations from the Protocol
 
