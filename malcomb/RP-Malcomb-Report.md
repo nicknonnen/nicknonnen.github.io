@@ -236,7 +236,7 @@ This reproduction was structured so as to specifically highlight how our workflo
 
 The first challenges came as we first attempted to construct a workflow from the Malcomb et al. (2014), with no access to data. For example, our lab group was unsure of the scale of the DHS data to be used (village, household, district), as well as the specific methodologies for creating quintiles through which to score resiliency. The original study states it used categories 0 through 5 to represent quintiles, despite presenting 6 categories. In this reproduction, we favored quintiles and assigned categories 1 through 5. A similar issue again arose when deciding how to assign binary variables, such as sex of head of household, a rank along the 1-5 scale. Eventually, we opted to assign a value of 1 to males (the presumed lower-risk category) and 2 to females.
 
-A final source of uncertainty came from the livelihood scores, which contained 4 indicators that were difficult to objectively quantify. Of these variables (see Table 2), "Disaster Coping Strategy" was particularly difficult to score, and little to no direction was provided by Malcomb et al. in their study. This data was incredibly rich and came in multiple scales and categories (for example, data came in poor, medium-income, rich sheets), and Malcomb et al. never specified from where or with what variables they calculated their livelihood scores. Our reproduction aims to improve on this direction with more specific methods seen in Table 2 above. 
+A final source of uncertainty came from the livelihood scores, which contained 4 indicators that were difficult to objectively quantify. Of these variables (see Table 2), "Disaster Coping Strategy" was particularly difficult to score, and little to no direction was provided by Malcomb et al. in their study. This data was incredibly rich and came in multiple scales and categories (for example, data came in poor, medium-income, rich sheets), and Malcomb et al. never specified from where or with what variables they calculated their livelihood scores. Our reproduction aims to improve on this direction with more specific methods seen in Table 2 above.
 
 
 ## Discussion
@@ -246,6 +246,8 @@ Provide a summary and interpretation of the key findings of the replication *vis
 - lack of code
 - lack of details in the original analysis
 - uncertainties due to manner in which data has been used
+
+
 
 ## Conclusion
 
