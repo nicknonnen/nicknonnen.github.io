@@ -132,7 +132,6 @@ The replication study will use R 1.4.1106 and QGIS LTR 3.16.4-Hannover.
 
 The steps below may be found applied in an [R Script here.](/malcomb/RP-Malcomb-nn.Rmd)
 
-
 *Process Adaptive Capacity*
 
 1. Bring in DHS Data [Households Level] (vector)
@@ -175,15 +174,18 @@ The steps below may be found applied in an [R Script here.](/malcomb/RP-Malcomb-
 3. Reclassify the drought values (quantile [from 0 - 1 in intervals of 0.2 =5])
 4. AGGREGATE: Create final vulnerability layer using environmental vulnerability score and ta_capacity.
 
-We used this formula to calculate the final vulnerability scores. 
+We used this formula to calculate the final vulnerability scores, following the weighted indicators set by Table 2 of Malcomb et al. seen in Figure 1 below.
 ```
 final = (40 - geo) * 0.40 + drought * 0.20 + flood * 0.20 + lhz_capacity * 0.20
 ```
 
-Finally, we georeferenced Figures 4 and 5 from Malcomb et al. (2014) in QGIS in order to compare the original study results to those produced by the above R script. This comparison was quantitatively demonstrated through a Spearman's Rho correlation test, presented here in ***Table X.***
+![malcomb table 2](/malcomb/assets/malcomb_table2.png)
+Figure 1. Weighted indicators used to calculate adaptive capacity scores by metatheme, from Malcomb et al. (2014) Table 2. 
+
+Finally, we georeferenced Figures 4 and 5 from Malcomb et al. (2014) in QGIS in order to compare the original study results to those produced by the above R script. This comparison was quantitatively demonstrated through a Spearman's Rho correlation test.
 
 
-## Replication Results
+## Reproduction Results
 
 For each output from the original study (mainly figure 4 and figure 5), present separately the results of the replication attempt.
 
@@ -196,16 +198,20 @@ Figures to Include:
 - map of difference between your figure 4 and the original figure 4
 - map of difference between your figure 5 and the original figure 5
 
+The effort of this replication study appears to support the original findings of the Malcomb et al. (2014) paper we set out to validate. Our workflow produced the adaptive capacity scores seen in Figure 1, which strongly agrees with Malcomb et al.'s Figure 4. The difference map, illustrating the similarity between adaptive capacity scores for each Traditional Capacity scores, is seen in Figure 2.
+
 
 ![Fig4resilience](/malcomb/assets/Fig4rep.png)
-Figure 1. Adaptive Capacity Scores from our results (mapping access and assets data).
+Figure 2. Adaptive Capacity Scores from our results (mapping access and assets data).
 
 ![resilience_comparison](/malcomb/assets/Fig4comp.png)
-Figure 2. Comparing Adaptive Capacity Score maps from our procedure (Fig 1) and from Malcomb et al. (2014) (Fig 4).
+Figure 3. Comparing Adaptive Capacity Score maps from our procedure (Fig 1) and from Malcomb et al. (2014) (Fig 4).
 
 ![Fig5vulnerability](/malcomb/assets/Fig5rep.png)
+Figure 4.
 
 ![vulnerability_comparison](/malcomb/assets/Fig5comp.png)
+Figure 5.
 
 ## Unplanned Deviations from the Protocol
 
