@@ -249,7 +249,14 @@ Provide a summary and interpretation of the key findings of the replication *vis
 
 This reproduction study succeeded in producing Malawi Traditional Authority Adaptive Capacity Scores similar to the original findings of Malcomb et al. (2014), but was unable to produce satisfactorily similar Vulnerability Scores.
 
-As seen in Figures 2 and 3, Adaptive Capacity Scores for individual Traditional Authorities produced in this reproduction study share a strong correlation with those determined 
+As seen in Figures 2 and 3, Adaptive Capacity Scores for individual Traditional Authorities produced in this reproduction study share a strong correlation with those determined by Malcomb et al. in their results. It should be noted that one contributor to this similarity is the arbitrary multiplication of results by the constant 20, which increased the values of the scores into the range they are presented in in Figure 2 (around 14 to 22). I made the conscious decision to include this arbitrary constant in the final Adaptive Capacity Scores formula, even while some of my classmates did not. Neither camp is correct in their workflow, as the constant is purely to change the resulting integer displayed in the map.
+
+It may have been because of this inclusion of the constant, however, that my comparison tests resulted in such similar products. The difference between Adaptive Capacity Scores per Traditional Authority may be seen in Figure 3, and it is evident there that many of these zones share the same score or are only different by +/- 1. This similarity is overall unsurprising, as we used the exact same dataset and clear variables from the DHS survey data as Malcomb et al. in their analysis. The Spearman's rho correlation test serves as more evidence of this agreement, and the strong value of 0.786 indicates similar results.
+
+We faced almost completely opposite reproduction conditions when attempting to recreate the Vulnerability Scores map. Malcomb et al. left almost their entire workflow up to broad interpretation, and we were left to determine for our own which variables to use, from which specific datasets, and in what part of the final indicator values used to calculate the final scores. Eventually, our group constructed our own categories with the specific variables seen in Table 2.
+
+As a result of this new interpretation, our Vulnerability Score Map (Figure 4) did not share a very strong agreement with that produced by Malcomb et al. This comparison is illustrated in Figure 5, where the strong red presence indicates significant negative difference between maps. This lack of similarity is quantified through another Spearman's rho test, which produced a result of 0.202. The lack of clarity in Malcomb et al.'s  workflow was, while for the most part surmountable, ultimately the major hindrance in completing a full reproduction. Here, we have strived to fill in the gaps we found were missing from the original study, and we hope this information allows for the total reproduction of future sub-national climate analyses.
+
 
 ## Conclusion
 
