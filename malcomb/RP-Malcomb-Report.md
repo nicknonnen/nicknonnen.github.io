@@ -254,14 +254,12 @@ As a result of this new interpretation, our Vulnerability Score Map (Figure 4) d
 
 ## Conclusion
 
-Restate the key findings and discuss their broader societal implications or contributions to theory.
-Do the research findings suggest a need for any future research?
-
-In conclusion, our reproduction effort working on recreating a sub-national climate vulnerability analysis first produced by Malcomb et al. in 2014 was only partially successful. This study was able to reproduce Adaptive Capacity Scores that strongly agree with those in the original study, yet was not able to reproduce anything 
+In conclusion, our reproduction effort working on recreating a sub-national climate vulnerability analysis first produced by Malcomb et al. in 2014 was only partially successful. This study was able to reproduce Adaptive Capacity Scores that strongly agree with those in the original study, yet was not able to reproduce anything significantly similar to the Vulnerability Scores figure. The most significant challenges were encountered when attempting to assign different variables within the available data to certain places in formulas utilized by Malcomb et al., as the original study did a good job outlining how the data was used, but not which aspects of the data were used.
 
 We faced significant challenges in accurately reproducing the workflow to properly create the maps and figures we saw in Malcomb et al.'s publication, despite having access to 100% of the data and the entire paper. While some of these challenges were passable with time and increased collaboration, more were not and instead relied on our individual initiative to draw feasible workflows with the data available and only a rough idea of what an outcome should look like.
 
-Our efforts cast a new light on the importance of
+Our efforts cast a new light on the importance of clear and accessible methodologies, and the impact these sections of scientific publications can have on the validity of the science as a whole. Ensuring climate adaption model studies such as this will certainly hold paramount importance in the years to come, as climate change becomes an even more pressing issue and more and more countries around the world find the need to conduct thorough vulnerability assessments in the same manner as this study. If anything has been learned from this reproduction effort, it is that small details matter just as much as large ones, and clarifying datasets used is not helpful if specific variables that contribute to results are not highlighted. A final issue that is pertinent to this study (and will likely be for many future geospatial studies, as various code languages become more integrated into GIS analyses) is the benefits of including direct code in methodologies, in some form or another: this issue may still be a systemic hurdle, as the geospatial scientific community rewrites publication guidelines to accomodate new forms of analysis, but is a vital thought to hold and actively advocate in sharing future studies.
+
 
 ## References
 
