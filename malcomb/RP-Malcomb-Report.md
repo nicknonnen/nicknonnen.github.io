@@ -241,12 +241,6 @@ A final source of uncertainty came from the livelihood scores, which contained 4
 
 ## Discussion
 
-Provide a summary and interpretation of the key findings of the replication *vis-a-vis* the original study results. If the attempt was a failure, discuss possible causes of the failure. In this replication, any failure is probably due to practical causes, which may include:
-- lack of data
-- lack of code
-- lack of details in the original analysis
-- uncertainties due to manner in which data has been used
-
 This reproduction study succeeded in producing Malawi Traditional Authority Adaptive Capacity Scores similar to the original findings of Malcomb et al. (2014), but was unable to produce satisfactorily similar Vulnerability Scores.
 
 As seen in Figures 2 and 3, Adaptive Capacity Scores for individual Traditional Authorities produced in this reproduction study share a strong correlation with those determined by Malcomb et al. in their results. It should be noted that one contributor to this similarity is the arbitrary multiplication of results by the constant 20, which increased the values of the scores into the range they are presented in in Figure 2 (around 14 to 22). I made the conscious decision to include this arbitrary constant in the final Adaptive Capacity Scores formula, even while some of my classmates did not. Neither camp is correct in their workflow, as the constant is purely to change the resulting integer displayed in the map.
