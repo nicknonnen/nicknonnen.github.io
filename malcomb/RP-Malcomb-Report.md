@@ -257,6 +257,12 @@ As a result of this new interpretation, our Vulnerability Score Map (Figure 4) d
 Restate the key findings and discuss their broader societal implications or contributions to theory.
 Do the research findings suggest a need for any future research?
 
+In conclusion, our reproduction effort working on recreating a sub-national climate vulnerability analysis first produced by Malcomb et al. in 2014 was only partially successful. This study was able to reproduce Adaptive Capacity Scores that strongly agree with those in the original study, yet was not able to reproduce anything 
+
+We faced significant challenges in accurately reproducing the workflow to properly create the maps and figures we saw in Malcomb et al.'s publication, despite having access to 100% of the data and the entire paper. While some of these challenges were passable with time and increased collaboration, more were not and instead relied on our individual initiative to draw feasible workflows with the data available and only a rough idea of what an outcome should look like.
+
+Our efforts cast a new light on the importance of
+
 ## References
 
 Malcomb, D. W., E. A. Weaver, and A. R. Krakowka. 2014. Vulnerability modeling for sub-Saharan Africa: An operationalized approach in Malawi. Applied Geography 48:17–30. [DOI:10.1016/j.apgeog.2014.01.004](DOI:10.1016/j.apgeog.2014.01.004)
