@@ -203,6 +203,9 @@ Figure 4. Visualizing tweet activity by population per county in the southeaster
 ![clusters_map](/assets/clusters3.png)
 Figure 5. Visualizing hot spot clusters where tweets related to the Southeast Tornado event were particularly high or particularly low.
 
+![tornadopath_actual](/assets/tornadopath_actual.png)
+Figure 6. The National Weather Service Storm Prediction Center's Severe Weather Outlook for the May 3 2021 tornados. Yellow and Orange represent highest risk of severe weather, and green and beige represent marginal risk and thunder.
+
 
 ## Unplanned Deviations from the Protocol
 
@@ -217,7 +220,14 @@ The results of my temporal analysis reflect Twitter activity related to any of m
 
 The content and network analysis shine more light on this conclusion. As seen in Figure 2, some of the most frequently-seen words are 'atlanta', 'georgia', 'warning', 'exit', 'blocked', and 'accident' - all words that associate with danger and communication that makes content in light of a disaster event. Some of the word pairs in Figure 3 support this further; associated pairs include 'seek-shelter', 'nws-storm-survey-reports', 'watch-issued', 'emergency-mngr', and 'delayed-report'. It appears that of the tweets posted in this tie frame and geographic extent, some were using the platform to communicate updates and warnings regarding the surrounding danger. This is not the case for all of the tweets - there are a significant amount of unrelated networks, such as 'atlanta-hiring', 'atlanta-braves', and 'anthony-taylor-brian'.
 
+In Figures 4 and 5, A spatial pattern emerges that connects the findings of the temporal and content analyses. Figure 4 displays tweet density of relevant tweets in the specific timeframe, when compared to the actual predicted path of storms from the NWS Storm Prediction Center, higher density areas align relatively closely with highest-risk corridors. This pattern is seen again in Figure 5, where darker red counties represent hot spots for relevant Twitter activity - again, sharing a high degree of similarity to both the predicted path of the storms, and the density of tweets being posted.
 
+what does this mean?
+- relevant tweets contain warnings and communication related to the disaster events
+- tweets are highest in volume around the times of disaster events
+- hot spots and high densities are spatially arranged very close to the path of the actual storms
+
+this study seems to agree with conclusions drawn by Holler (2021) and Wang et al. (2016) in that Twitter activity does accurately represent the spatial, temporal, content, and network dimensions of disaster events and can therefore be safely used by researchers looking to aid, manage, and study disaster-affected populations and areas
 
 
 ## Conclusion
