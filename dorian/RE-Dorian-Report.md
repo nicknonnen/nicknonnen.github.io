@@ -238,6 +238,8 @@ Do the research findings suggest a need for any future research?
 findings confirm
 
 https://www.nytimes.com/2021/05/03/us/tornadoes-mississippi-atlanta.html - NYT article on the May 2-4 tornados
+https://www.washingtonpost.com/weather/2021/05/03/mississippi-tornadoes-severe-thunderstorm-threat/ - Washington Post article on same storms
+https://www.spc.noaa.gov/wcm/ - NWS storm prediction center
 
 ## References
 
