@@ -235,6 +235,8 @@ this study seems to agree with conclusions drawn by Holler (2021) and Wang et al
 Restate the key findings and discuss their broader societal implications or contributions to theory.
 Do the research findings suggest a need for any future research?
 
+findings confirm
+
 https://www.nytimes.com/2021/05/03/us/tornadoes-mississippi-atlanta.html - NYT article on the May 2-4 tornados
 
 ## References
