@@ -214,32 +214,34 @@ The content and network analysis shine more light on this conclusion. As seen in
 
 In Figures 4 and 5, a spatial pattern emerges that connects the findings of the temporal and content analyses. Figure 4 displays tweet density of relevant tweets in the specific timeframe, and when compared to the actual predicted path of storms from the NWS Storm Prediction Center, higher density areas align relatively closely with NWS highest-risk corridors. This pattern is seen again in Figure 5, where darker red counties represent hot spots for relevant Twitter activity - again, sharing a high degree of similarity to both the predicted path of the storms, and the density of tweets being posted.
 
-what does this mean?
-- relevant tweets contain warnings and communication related to the disaster events
-- tweets are highest in volume around the times of disaster events
-- hot spots and high densities are spatially arranged very close to the path of the actual storms
-
-this study seems to agree with conclusions drawn by Holler (2021) and Wang et al. (2016) in that Twitter activity does accurately represent the spatial, temporal, content, and network dimensions of disaster events and can therefore be safely used by researchers looking to aid, manage, and study disaster-affected populations and areas
+These findings reveal three major outcomes. Relevant tweets contain warnings and communications related to the ongoing disaster event; tweets are highest in volume around the times of disaster events; and tweet hot spots and high density areas are spatially arranged very close to the path of the actual storms. Considered together, it is evident that Twitter activity did accurately represent the spatial, temporal, content, and network dimensions of these storms. This leads me to conclude that conclusions drawn by Holler (2021) and Wang et al. (2016) are valid and correct, and that Twitter data can be safely and effectively used by researchers, emergency relief services, and administrators to aid, manage, and study disaster-affected populations and regions.
 
 
 ## Conclusion
 
-Restate the key findings and discuss their broader societal implications or contributions to theory.
-Do the research findings suggest a need for any future research?
+As social media platforms continue to collect mass amounts of user-provided public information about relationships between users and the physical world around them, the scientific community must develop and practice new epistemologies for using and analyzing big data. Concerns surrounding the ethics of using social media-provided big datasets have already been raised (Crawford and Finn 2014) and have yet to be adequately addressed by the greater geospatial scientific community, but there are ways to responsibly and respectfully handle this data and draw valid and useful conclusions.
 
-findings confirm
+This data can serve particularly effective use when it comes to aiding, managing, and studying natural disaster events. This study replicates, and in its conclusions validates, Holler (2021) in his effort to analyze if Twitter data surrounding both the true and falsely-claimed landfall of Hurricane Dorian accurately represented the spatial, temporal, content, and network dimensions of the physical event. In his study, Holler concludes Twitter activity did illustrate the true movement and timing of the storm, and that tweet content contained relevant warnings and communications pertinent to other people attempting to flee from danger.
 
-https://www.nytimes.com/2021/05/03/us/tornadoes-mississippi-atlanta.html - NYT article on the May 2-4 tornados
-https://www.washingtonpost.com/weather/2021/05/03/mississippi-tornadoes-severe-thunderstorm-threat/ - Washington Post article on same storms
-https://www.spc.noaa.gov/wcm/ - NWS storm prediction center
+Holler's study was itself a loose replication of Wang et al. (2016), which focused on 2014 wildfire events in California, and concluded similar results. This study, which focuses on 2021 tornado storm events in the southeastern U.S., confirms the conclusions of both studies and therefore provides further support that social media data scraped from public platforms such as Twitter can provide accurate and informative information for future natural disaster research and management.
+
+As the production of big datasets through social media platforms continues to evolve, and as a changing climate influences more and more disaster-level storm events that affect more and more human populations, more research will need to be conducted to maintain the validity of these results. Research pertaining to the usefulness and accessibility of big data from other platforms, such as Facebook or Instagram, could also be effective in illustrating a more complete picture of how social media data influences human interactions with natural disaster or crists events.
+
 
 ## References
 
 Include any referenced studies or materials in the [AAG Style of author-date referencing](https://www.tandf.co.uk//journals/authors/style/reference/tf_USChicagoB.pdf).
 
+https://www.nytimes.com/2021/05/03/us/tornadoes-mississippi-atlanta.html - NYT article on the May 2-4 tornados
+https://www.washingtonpost.com/weather/2021/05/03/mississippi-tornadoes-severe-thunderstorm-threat/ - Washington Post article on same storms
+https://www.spc.noaa.gov/wcm/ - NWS storm prediction center
+
+
+Crawford, K., and M. Finn. 2014. The limits of crisis data: analytical and ethical challenges of using social and mobile data to understand disasters. GeoJournal 80 (4):491–502. [DOI:10.1007/s10708-014-9597-z](https://github.com/GIS4DEV/literature/blob/master/The%20limits%20of%20crisis%20data%20analytical%20and%20ethical%20challenges%20of%20using%20social%20and%20mobile%20data%20to%20understand%20disasters.pdf).
+
 Isaac, Mike. 2021. Facebook posts a 33 percent increase jump in revenue and a 53 percent jump in profit. *New York Times*, Jan 27. Accessed May 11, 2021. [https://www.nytimes.com/2021/01/27/business/facebook-earnings.html](https://www.nytimes.com/2021/01/27/business/facebook-earnings.html).
 
-Wang, Z., X. Ye, and M. H. Tsou. 2016. Spatial, temporal, and content analysis of Twitter for wildfire hazards. Natural Hazards 83 (1):523–540. [DOI:10.1007/s11069-016-2329-6](https://link.springer.com/article/10.1007/s11069-016-2329-6)
+Wang, Z., X. Ye, and M. H. Tsou. 2016. Spatial, temporal, and content analysis of Twitter for wildfire hazards. Natural Hazards 83 (1):523–540. [DOI:10.1007/s11069-016-2329-6](https://link.springer.com/article/10.1007/s11069-016-2329-6).
 
 ####  Report Template References & License
 
