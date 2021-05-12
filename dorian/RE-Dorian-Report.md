@@ -213,11 +213,19 @@ Fortunately, this analysis did not suffer any significant unplanned deviations f
 
 Provide a summary and interpretation of your key findings in relation to your research question. Mention if findings confirm or contradict patterns observed by Wang et al (2016) or by Holler (2
 
+The results of my temporal analysis reflect Twitter activity related to any of my four keywords from April 28th to May 6th, 2021. The dips represent nighttime, and the various peaks represent daytime; the tallest peaks likely represent severe weather events. The first peak on April 29th likely correlates to the final events of a [previous tornado outbreak](https://www.washingtonpost.com/weather/2021/05/03/mississippi-tornadoes-severe-thunderstorm-threat/), and is closely followed by another peak on May 3rd. It seems, from this graph as well as various news reports from local weather stations, the area was hit with multiple severe outbreaks in the span of only a few days, and Twitter activity jumped whenever the danger was greatest.
+
+The content and network analysis shine more light on this conclusion. As seen in Figure 2, some of the most frequently-seen words are 'atlanta', 'georgia', 'warning', 'exit', 'blocked', and 'accident' - all words that associate with danger and communication that makes content in light of a disaster event. Some of the word pairs in Figure 3 support this further; associated pairs include 'seek-shelter', 'nws-storm-survey-reports', 'watch-issued', 'emergency-mngr', and 'delayed-report'. It appears that of the tweets posted in this tie frame and geographic extent, some were using the platform to communicate updates and warnings regarding the surrounding danger. This is not the case for all of the tweets - there are a significant amount of unrelated networks, such as 'atlanta-hiring', 'atlanta-braves', and 'anthony-taylor-brian'.
+
+
+
 
 ## Conclusion
 
 Restate the key findings and discuss their broader societal implications or contributions to theory.
 Do the research findings suggest a need for any future research?
+
+https://www.nytimes.com/2021/05/03/us/tornadoes-mississippi-atlanta.html - NYT article on the May 2-4 tornados
 
 ## References
 
