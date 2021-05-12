@@ -17,7 +17,7 @@ Nick Nonnenmacher
 Replication Materials Available at: [nicknonnen/RE-Dorian](https://github.com/nicknonnen/RE-Dorian)
 
 Created: `05 May 2021`
-Revised: `11 May 2021`
+Revised: `12 May 2021`
 
 ## Abstract
 
@@ -42,14 +42,6 @@ Wang et al (2016) conducted their study using the `tm` and `igraph` packages in 
 
 
 ## Materials and Procedure
-
-Outline the data to be used in your replication study, including:
-
-- twitter search parameters
-- attach / link to files containing status_id's for the search results
-- any data used to normalize the tweets
-- methods for analysis / synthesis
-
 
 The data for this lab was procured through a Twitter Developer account, which requires an application but is free of charge. All of our analysis was conducted in `RStudio 1.4.1106`, and the full code I used to complete this study may be found [here](/dorian/nn_twitter_analysis_search.r).
 
