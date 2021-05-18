@@ -15,8 +15,8 @@ Nick Nonnenmacher, Zach Hilgendorf, Joseph Holler, and Peter Kedron.
 
 Replication Materials Available at: [nicknonnen/RE-rosgen](https://github.com/nicknonnen/RE-rosgen)
 
-Created: `21 March 2021`
-Revised: `28 March 2021`
+Created `21 March 2021`
+Revised `28 March 2021`
 
 ## Introduction and Motivation
 

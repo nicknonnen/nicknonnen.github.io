@@ -3,12 +3,10 @@ layout: page
 title: Spatial Urban Climate Resilience Analysis in Dar es Salaam
 ---
 
-**Spatial Urban Resilience Analysis in Dar es Salaam**
-
 Produced by Nick Nonnenmacher
 
-Created - `03/31/2021`
-Revised - `04/13/2021`
+Created `03/31/2021`
+Revised `04/13/2021`
 
 ## Background Question
 
