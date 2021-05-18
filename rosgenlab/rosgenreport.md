@@ -3,15 +3,14 @@ layout: page
 title: A Classification of Natural Rivers
 ---
 
-**Replication of**
-### RE- Replication of Rosgen Stream Classification
+**RE- Replication of Rosgen Stream Classification**
 
 Original study *by* Rosgen, D. L.
 *in* *CATENA* 22 (3):169–199. https://linkinghub.elsevier.com/retrieve/pii/0341816294900019.
 
 and Replication by: Kasprak, A., N. Hough-Snee, T. Beechie, N. Bouwes, G. Brierley, R. Camp, K. Fryirs, H. Imaki, M. Jensen, G. O’Brien, D. Rosgen, and J. Wheaton. 2016. The Blurred Line between Form and Process: A Comparison of Stream Channel Classification Frameworks ed. J. A. Jones. *PLOS ONE* 11 (3):e0150293. https://dx.plos.org/10.1371/journal.pone.0150293.
 
-Replication Authors:
+**Replication Authors:**
 Nick Nonnenmacher, Zach Hilgendorf, Joseph Holler, and Peter Kedron.
 
 Replication Materials Available at: ["RE - rosgen"](https://github.com/nicknonnen/RE-rosgen)
