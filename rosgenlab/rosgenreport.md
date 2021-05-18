@@ -13,7 +13,7 @@ and Replication by: Kasprak, A., N. Hough-Snee, T. Beechie, N. Bouwes, G. Brierl
 **Replication Authors:**
 Nick Nonnenmacher, Zach Hilgendorf, Joseph Holler, and Peter Kedron.
 
-Replication Materials Available at: ["RE - rosgen"](https://github.com/nicknonnen/RE-rosgen)
+Replication Materials Available at: [nicknonnen/RE-rosgen](https://github.com/nicknonnen/RE-rosgen)
 
 Created: `21 March 2021`
 Revised: `28 March 2021`
