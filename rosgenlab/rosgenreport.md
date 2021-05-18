@@ -3,8 +3,7 @@ layout: page
 title: A Classification of Natural Rivers
 ---
 
-
-**Replication of**
+##**Replication of**##
 ## RE- Replication of Rosgen Stream Classification
 
 Original study *by* Rosgen, D. L.
