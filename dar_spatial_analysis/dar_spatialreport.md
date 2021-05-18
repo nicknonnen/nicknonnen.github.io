@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Spatial Urban Resilience Analysis in Dar es Salaam
+title: Spatial Urban Climate Resilience Analysis in Dar es Salaam
 ---
 
 **Spatial Urban Resilience Analysis in Dar es Salaam**
