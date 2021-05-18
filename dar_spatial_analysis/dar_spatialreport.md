@@ -3,6 +3,8 @@ layout: page
 title: Spatial Urban Climate Resilience Analysis in Dar es Salaam
 ---
 
+**Analysis and Application of Publicly-Collected Big Data in Sub-Saharan Africa**
+
 Produced by Nick Nonnenmacher
 
 Created `03/31/2021`
