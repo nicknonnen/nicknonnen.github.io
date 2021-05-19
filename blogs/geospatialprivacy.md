@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Big Data Analysis and geospatial Privacy
+title: Big Data Analysis and Geospatial Privacy
 ---
 
 This blog post is a reflection on the work presented by Dr. Mei-Po Kwan of the Chinese University of Hong Kong for the American Geographical Society on 9 September, 2020, discussing the efficiency and implications of [Tracking Movement through Space during COVID-19and Beyond](https://www.youtube.com/watch?v=hDpa3c5ljsA).
