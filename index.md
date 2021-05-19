@@ -24,6 +24,7 @@ My name is Nick Nonnenmacher, I am a senior Environmantal Studies and Biology ma
 - [Error and Uncertainty in GIScience](blogs/uncertainty.md)
 - [Spatial Data Analysis with Twitter](blogs/spatialtwitter.md)
 - [Discussions on Humanitarian GIS](blogs/humanitarianGIS.md)
+- [Reproducibility vs Ethics in GIS](blogs/geospatialprivacy.md)
 
 The website for the Middlebury College Spring 2021 Open Source GIScience can be found [here](https://gis4dev.github.io).
 The link to access this GitHub repository may be found at the top of this screen and [here](https://github.com/nicknonnen).
