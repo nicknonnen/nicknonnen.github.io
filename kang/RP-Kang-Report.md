@@ -3,7 +3,7 @@ layout: page
 title: RP - Kang et al. reproduction
 ---
 
-##Report outline##
+**Report outline**
 
 Introduction explaining the interest and purpose in reproducing the Kang et al (2020) study, and very briefly introducing what the study was about.
 
