@@ -6,8 +6,13 @@ title: RP - Kang et al. reproduction
 **Report outline**
 
 Introduction explaining the interest and purpose in reproducing the Kang et al (2020) study, and very briefly introducing what the study was about.
+- visualize spatial accessibility to COVID-19 relief resources in Chicago and area around Chicago
+- test replicability of this study - chosen to replicate due to the way it was published: almost all code is published in an accessible jupyter notebook
+- provide feedback for how to overcome some major flaws in workflow and improve study overall
 
 Materials and Methods briefly explaining and citing what data sources and computational resources were used for the study. Explain any changes you made to the original python notebook / repository.
+- sources: OSM network data (OpenStreetMap Python Library OSMNX), population data (ACS), and hospital data (HomelandInfrastructure Foundation-Level Data) **include links here**
+- figures: 
 
 Results and Discussion include images of findings (maps, graphs) and link to your final repository for the reproduction. Discuss what you learned from the reproduction attempt, especially any knowledge, insight, or uncertainty that was encoded in the repository or discovered in the reproduction but not explained in the published paper.
 
