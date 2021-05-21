@@ -31,3 +31,10 @@ doing right by/with GIS
   - accuracy vs precision, location vs attribute
   - error in motion: propagation, uncertainty
 - finishing with ethics - what does it mean to be studying this event? are we thinking about this issue in respectful ways?
+
+self-learning resources:
+- data carpentry workshops
+- packt
+- linkedin learning
+- FOSS4G conferences
+- geo for all
