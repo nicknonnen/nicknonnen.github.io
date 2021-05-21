@@ -12,7 +12,11 @@ Introduction explaining the interest and purpose in reproducing the Kang et al (
 
 Materials and Methods briefly explaining and citing what data sources and computational resources were used for the study. Explain any changes you made to the original python notebook / repository.
 - sources: OSM network data (OpenStreetMap Python Library OSMNX), population data (ACS), and hospital data (HomelandInfrastructure Foundation-Level Data) **include links here**
-- figures: 
+- figures: example of the two-step floating catchment area (Fig 3 in report), final figure showing accessibility areas (/assets/ChicagoResult2.png)
+- changes made: fixing the network spatial extent to overcome the flaw introduced by snapping hospitals to nearest node in grid
+  - this involved adding a buffer area when grabbing street network data
+  - also added time stamps to each function, so efficiency is more easily determined and slower functions can be pinpointed to improve the speed of the study overall
+
 
 Results and Discussion include images of findings (maps, graphs) and link to your final repository for the reproduction. Discuss what you learned from the reproduction attempt, especially any knowledge, insight, or uncertainty that was encoded in the repository or discovered in the reproduction but not explained in the published paper.
 
