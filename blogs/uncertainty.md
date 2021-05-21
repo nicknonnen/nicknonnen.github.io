@@ -3,7 +3,7 @@ layout: page
 title: Error and Uncertainty in GIScience
 ---
 
-Geographers have had to work with inherent uncertainty since the inception of cartography: displaying a three-dimensional surface in just two with 100% accuracy is physically impossible. While the discipline has since experienced the time and creativity energy necessary to adequately overcome this cardinal challenge, many more uncertainty issues have arisen as the science progressed and incorporated more sophisticated technologies, welcomed more diverse worldviews, and broadened to study more distant geographies.
+Geographers have had to work with inherent uncertainty since the inception of cartography: displaying a three-dimensional surface in just two dimensions with 100% accuracy is physically impossible. While the discipline has since experienced the time and creativity energy necessary to adequately overcome this cardinal challenge, many more uncertainty issues have arisen as the science progressed and incorporated more sophisticated technologies, welcomed more diverse world views, and broadened to study more distant geographies.
 
 In the modern day, a primary tool for geographic research is GIS. While GIS is a powerful spatial analysis tool, it introduces many nuanced and complex issues of uncertainty and accuracy to the field. As geographers are able to study the world at more and more specific scales, the reality of the analysis may become more and more distant from the reality of the phenomenon studied. This is a product of the inherent complexity and detailed nature of the world, not necessarily the fault of an analysis. As Longley et al. mentions, the world is only a reality because it contains everything all at once: to dissect that reality and focus on a single aspect is to ignore, and effectively isolate, the interacting elements and variables that are constantly in motion to create the study phenomena itself. In scientific lingo, this abstraction can be described in various ways, such as through error, accuracy, ambiguity, vagueness, and more. While these words differ in concrete definition, they all point towards that central disconnect that can only be explained by the difference between the scientist’s understanding of the contents of a dataset and the real phenomenon the data are believed to represent.
 
@@ -15,6 +15,6 @@ In conclusion, uncertainties are ingrained in the natural world all scientists s
 
 Reading:
 
-Longley, P. A., M. F. Goodchild, D. J. Maguire, and D. W. Rhind. 2008. Geographical information systems and science 2nd ed. Chichester: Wiley. [(only chapter 6: Uncertainty, pages 127-153)](https://github.com/GIS4DEV/literature/blob/master/Uncertainty%20Longley%20et%20al.pdf)
+Longley, P. A., M. F. Goodchild, D. J. Maguire, and D. W. Rhind. 2008. Geographical information systems and science 2nd ed. Chichester: Wiley. (only chapter 6: Uncertainty, pages 127-153)
 
 Submitted March 12, 2021.
