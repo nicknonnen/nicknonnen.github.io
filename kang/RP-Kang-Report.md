@@ -31,7 +31,9 @@ Results and Discussion include images of findings (maps, graphs) and link to you
 
 
 Conclusions with emphasis on the significance of the reproduction study you just completed. Was the study reproducible, and has the reproduction study increased, decreased, or otherwise refined your belief in the validity of the original study? Conclude with any insights, priorities, or questions for future research.
-- 
+- there is variation in the accessibility to COVID-19 relief resources in and around Chicago
+- study is reproducible and replicable, but scale must be kept in mind when pulling data for a RE/RP study
+- format of jupyter notbeook is highly effective in increasing transparency and reproducibility - this format should be used as an example for any future geospatial analysis involving heavy coding (do these notebooks only work for Python?)
 
 Note on Style: Remember that the primary motivation for reproduction and replication studies is not punitive. Frame your discussions in this report and previous reports in the constructive motivation for improving scientific knowledge through peer review. Project like CyberGISX generally, and the Kang et al 2020 publication specifically, are very new in geography, and our engagement with them should be both encouraging and constructive while emphasizing the value of open science.
 
