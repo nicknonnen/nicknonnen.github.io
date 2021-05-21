@@ -1,6 +1,6 @@
 ---
 layout: page
-title: What is Open Source GIS?
+title: What is Open Source GIScience?
 ---
 
 These days, to say that change happens slowly would merit a concussion test. Over the past year, the entire world has changed to adapt to remote working and learning environments, and the behavior of almost eight billion people has had to shift to adjust to a new normal. Many of these changes will remain a part of modern societies for decades to come, and for better or worse, I as a student will have to live my life and work towards the completion of my goals within the framework of some of these changes. However, there are a few very important fields that I will have the unique opportunity to participate in and not only help advance, but help shape and mold for the future. The most important of these fields, to me, is Open Source GIScience.
