@@ -133,30 +133,6 @@ features outside buffer zones = 1,092,527
 Then, I calculated the total city area inside each of the 42 buffer zones, and the total city area of each of the 95 individual city wards.
 
 ```
-ALTER TABLE darbuildings
-ADD COLUMN greenbuffer
-
-UPDATE darbuildings
-SET greenbuffer = 1
-FROM greenspacebuffers
-WHERE st_intersects(darbuildings.geom, greenspacebuffers.geom);
-
-SELECT greenbuffer, count(osm_id) as n
-FROM darbuildings
-GROUP BY greenbuffer
-ORDER BY n DESC;
-
-/*
-now we explicitly know which buildings are within the buffer zones and which aren't
-total features in darbuilings = 1,358,546
-features within buffer zones = 266,142
-features outside buffer zones = 1,092,527
-*/
-```
-
-Then, I calculated the area of the buffer zones and the city wards.
-
-```
 ALTER TABLE greenspacebuffers
 ADD COLUMN area_km2_buffers real;
 
