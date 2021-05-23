@@ -12,7 +12,7 @@ Revised `04/13/2021`
 
 ## Background Question
 
-Understanding and improving urban resilience around the world is paramount in preparing human population hubs for changing climates in the near future. In this analysis, I implemented SQL queries in PostGIS to analyze and better understand certain aspects of urban resilience in the eastern African city of Dar es Salaam, Tanzania. I was interested in how urban green space affected population spatial distribution, so my guiding question was, "is population density greater in areas closer to urban green space compared to farther away?"
+Understanding and improving urban resilience around the world is paramount in preparing human population hubs for changing climates in the near future. In this analysis, I implemented SQL queries in PostGIS to analyze and better understand certain aspects of urban resilience in the eastern African city of Dar es Salaam, Tanzania. I was interested in how urban green space affected population spatial distribution, so through using residential building spatial information as a proxy for population, my guiding question was, "is building density greater in areas closer to urban green space compared to farther away?"
 
 
 ## Data
@@ -31,7 +31,7 @@ Specific data used in this analysis includes:
 
 ## Methods
 
-This exercise was as much an exercise in SQL literacy and open-source science as an analysis in urban resilience. Therefore, extra effort has been allocated into developing an accessible and reproducible workflow that can be replicated in PostGIS - using the [OSM2PGSQL tool](https://ramanihuria.org/en/) - and used as an effective SQL teaching mechanism.
+This exercise was as much an exercise in SQL literacy and open-source science as an analysis in urban resilience. Therefore, extra effort has been allocated into developing an accessible and reproducible workflow that can be replicated in PostGIS - using the [OSM2PGSQL tool](https://osm2pgsql.org) - and used as an effective SQL teaching mechanism.
 
 The first step to this analysis was obtaining data from the Resilience Academy and OSM. Joe Holler, the professor of this class, had already obtained and downloaded Dar es Salaam ward and building data, which I accessed in PostGIS using the DB Manager tool in QGIS.
 
@@ -72,7 +72,7 @@ GROUP BY field1
 ORDER BY n DESC;
 ```
 
-Once the residential buildings and appropriate greenspace features had been isolated, I created the buffer zones around each greenspace point in the city. I chose the arbitrary distance of 500m to create these buffers. By dissolving overlapping buffers, I would later be able to calculate area and population density. This process resulted in 42 buffer features, from the 356 unique greenspace points.
+Once the residential buildings and appropriate greenspace features had been isolated, I created the buffer zones around each greenspace point in the city. I chose the arbitrary distance of 500m to create these buffers. By dissolving overlapping buffers, I would later be able to calculate area and building density. This process resulted in 42 buffer features, from the 356 unique greenspace points.
 
 ```
 CREATE TABLE greenspacecentroids AS
@@ -163,7 +163,7 @@ ON st_intersects(darbuildings.geom, greenspacebuffers.geom)
 GROUP BY greenspacebuffers.id;
 ```
 
-Now, I know the area in square kilometers and the number of buildings within the 42 buffer zones, contained in the 'pop_density_green' table, and the area in square kilometers and the number of buildings within the 95 city wards, contained in the 'wards2' table. It only takes a simple calculation from here to create a new population density column!
+Now, I know the area in square kilometers and the number of buildings within the 42 buffer zones, contained in the 'pop_density_green' table, and the area in square kilometers and the number of buildings within the 95 city wards, contained in the 'wards2' table. It only takes a simple calculation from here to create a new building density column!
 
 ```
 ALTER TABLE pop_density_green
@@ -179,7 +179,7 @@ UPDATE ward_flood2
 SET pop_density = wards2.totalpop / wards2.area_km2;
 ```
 
-From here, I added the 'wards2' and 'pop_density_green' layers into a QGIS file and created a chloropleth map from the population density data (Figures 1 and 3). I also added the greenspace centroid points before buffers were added, to visualize where the urban green space actually is in the city in a separate map (Figure 2). An OSM Standard basemap was added to all three figures for easier viewing. Additionally, a Leaflet interactive map was created to better understand how population density changes in relation to ward and the presence of urban green spaces.
+From here, I added the 'wards2' and 'pop_density_green' layers into a QGIS file and created a chloropleth map from the building density data (Figures 1 and 3). I also added the greenspace centroid points before buffers were added, to visualize where the urban green space actually is in the city in a separate map (Figure 2). An OSM Standard basemap was added to all three figures for easier viewing. Additionally, a Leaflet interactive map was created to better understand how building density changes in relation to ward and the presence of urban green spaces.
 
 The .sql document containing all of my queries may be found [here](/dar_spatial_analysis/darspatialanalysisqueries.sql).
 The initial SQL exercise studying Dar es Salaam flood risk conducted by Joe Holler and the Middlebury College spring 2021 GEOG 323 class may be found [here](/dar_spatial_analysis/osm_sql.sql).
@@ -187,22 +187,22 @@ The initial SQL exercise studying Dar es Salaam flood risk conducted by Joe Holl
 
 ## Results
 
-Here is a map [summarizing population density distribution in relation to green space in Dar es Salaam.](/dar_spatial_analysis/assets/)
+Here is a map [summarizing building density distribution in relation to green space in Dar es Salaam.](/dar_spatial_analysis/assets/)
 
-These results show that there is a general positive correlation between high-density wards and high-density buffer zones - implying urban green space does not significantly influence proximate population density. As seen in Figures 1 and 2, the highest-density wards are situated in the center of the city along the coastline, and overlap with the major cluster of urban green points. This is further supported in Figure 3, where the darkest-blue buffer zones are most represented in the same city center region.
+These results show that there is a general positive correlation between high-density wards and high-density buffer zones - implying urban green space does not significantly influence proximate building density. As seen in Figures 1 and 2, the highest-density wards are situated in the center of the city along the coastline, and overlap with the major cluster of urban green points. This is further supported in Figure 3, where the darkest-blue buffer zones are most represented in the same city center region.
 
 There are a few notable exceptions to this pattern. A range of third-quintile buffer zones are found just to the northeast of the city center clusters, representing a noticeable beachfront community. More examples may be seen in the western-most wards of the city, where a few fourth- and third-quintile buffer zones linger even as the overall ward density drops to second- and first-quintiles.
 
 ![Figure 1. wards density](/dar_spatial_analysis/assets/warddensitymap2.png)
-Figure 1. Population density by city ward in Dar es Salaam in 2018. Data obtained from Resilience Academy and OSM (Basemap: OSM).
+Figure 1. Building density by city ward in Dar es Salaam in 2018. Data obtained from Resilience Academy and OSM (Basemap: OSM).
 
 ![Figure 2. green space points](/dar_spatial_analysis/assets/greenspacepointsmap1.png)
 Figure 2. Green space in Dar es Salaam in 2019, represented as points. Data obtained from Resilience Academy and OSM (Basemap: OSM).
 
 ![Figure 3. pop density in buffer zones](/dar_spatial_analysis/assets/bufferdensitymap1.png)
-Figure 3. Population density by green space buffer zone in Dar es Salaam in 2019. Data obtained from Resilience Academy and OSM (Basemap: OSM).
+Figure 3. Building density by green space buffer zone in Dar es Salaam in 2019. Data obtained from Resilience Academy and OSM (Basemap: OSM).
 
-In conclusion, the results of this analysis simply suggest that urban green space has been incorporated in regions of the city where population density is already high. Past studies have demonstrated there may be direct and indirect human health benefits to increasing the abundance of nature and natural places in modern urban space (van Leeuwen, Nijkamp, and de Norohna Vaz 2011, Lee and Maheswaran 2011, De Ridder et al 2004), and this may prove even more significant in rapidly-developing cities such as Dar es Salaam. Green spaces have been shown to provide cooling effects in dense urban centers, enhance local air quality, and even improve the use of nearby farmland (van Leeuwen, Nijkamp, and de Norohna Vaz 2011). As Dar es Salaam continues to grow in size and population over the next decade, pointed effort must be devoted to the city's infrastrcture and use of natural resources in order to provide a safe and healthy economic and cultural hub for Tanzania and east Africa.
+In conclusion, the results of this analysis simply suggest that urban green space has been incorporated in regions of the city where building density is already high. Past studies have demonstrated there may be direct and indirect human health benefits to increasing the abundance of nature and natural places in modern urban space (van Leeuwen, Nijkamp, and de Norohna Vaz 2011, Lee and Maheswaran 2011, De Ridder et al 2004), and this may prove even more significant in rapidly-developing cities such as Dar es Salaam. Green spaces have been shown to provide cooling effects in dense urban centers, enhance local air quality, and even improve the use of nearby farmland (van Leeuwen, Nijkamp, and de Norohna Vaz 2011). As Dar es Salaam continues to grow in size and population over the next decade, pointed effort must be devoted to the city's infrastrcture and use of natural resources in order to provide a safe and healthy economic and cultural hub for Tanzania and east Africa.
 
 ## Acknowledgements
 
