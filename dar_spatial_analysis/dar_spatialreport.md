@@ -139,7 +139,7 @@ ADD COLUMN area_km2_buffers real;
 UPDATE greenspacebuffers
 SET area_km2_buffers = st_area(geom) / 1000;
 
-/* this will give us the area of each of the 42 buffer zones */
+/* this will give us the area of each of the 42 buffer zones in square kilometers*/
 
 ALTER TABLE wards2
 ADD COLUMN area_km2 real;
