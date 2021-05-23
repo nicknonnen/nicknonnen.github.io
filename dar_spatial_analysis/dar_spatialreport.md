@@ -130,7 +130,7 @@ features outside buffer zones = 1,092,527
 */
 ```
 
-Then, I calculated the total city area inside each of the 42 buffer zones, and the total city area of each of the 95 individual city wards.
+Then, I calculated the total city area inside each of the 42 buffer zones, and the total city area of each of the 95 individual city wards. Both areas are represented in 1000m2.
 
 ```
 ALTER TABLE greenspacebuffers
@@ -163,7 +163,7 @@ ON st_intersects(darbuildings.geom, greenspacebuffers.geom)
 GROUP BY greenspacebuffers.id;
 ```
 
-Now, I know the area in square kilometers and the number of buildings within the 42 buffer zones, contained in the 'pop_density_green' table, and the area in square kilometers and the number of buildings within the 95 city wards, contained in the 'wards2' table. It only takes a simple calculation from here to create a new building density column!
+Now, I know the area in 1000 square meters and the number of buildings within the 42 buffer zones, contained in the 'pop_density_green' table, and the area in 1000 square meters and the number of buildings within the 95 city wards, contained in the 'wards2' table. It only takes a simple calculation from here to create a new building density column!
 
 ```
 ALTER TABLE pop_density_green
