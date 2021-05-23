@@ -214,7 +214,7 @@ Figure 4. Vulnerability Scores in Malawi from our reproduction results.
 ![vulnerability_comparison](/malcomb/assets/Fig5comp2.png)
 Figure 5. Comparing Vulnerability Scores maps from our procedure (Fig 4) and Malcomb et al. (2014) (Fig 5).
 
-![vulnerability_scatterplot](/malcomb/assets/Vulnerability_Scores_comp.jpg)
+![vulnerability_scatterplot](/malcomb/assets/Vulnerability_Scores_comp.png)
 Figure 6. A scatterplot comparing final vulnerability scores generated from the workflow of this reproduction and the results of the workflow of Malcomb et al. (2014). To achieve these scores, we used the formula *difference = reproduction score - original score*. A Spearman's rho value resulted in **0.202**.
 
 
