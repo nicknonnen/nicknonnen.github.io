@@ -79,7 +79,6 @@ Figure 6. The longitudinal profile of the river within Site 25. Note the differe
 ![Cross-sectional Profile](/rosgenlab/assets/crosssectional_profile1.png)
 Figure 7. The cross-sectional profile of the river within Site 25. Note the different scales of the x and y axes. The bankfull width and flood-prone width may be estimated based off the center trough of this graph.
 
-<br /><br /><br /><br />
 
 Table 1. Site Measurements
 
@@ -91,10 +90,9 @@ Table 1. Site Measurements
 | Valley Width | 85 | Terrain Cross-Section in R |
 | Valley Depth | 3 | Terrain Cross-Section |
 | Stream/River Length | 208.993 | CHaMP Data |
-| Valley Length | 197.033 | CHaMP Data |
-| Median Channel Material Particle Diameter | 59 | CHaMP Data |
+| Valley Length | 197.033 | Derived |
+| Median Channel Material Particle Diameter | 59 | Derived |
 
-<br /><br />
 
 Table 2. Rosgen Level I Classification
 
@@ -105,7 +103,6 @@ Table 2. Rosgen Level I Classification
 | Sinuosity | 1.061 |
 | Level I Stream Type | C |
 
-<br /><br />
 
 Table 3. Rosgen Level II Classification
 
@@ -115,7 +112,6 @@ Table 3. Rosgen Level II Classification
 | Channel Material | Gravel |
 | Level II Stream Type | C4 |
 
-<br />
 
 
 ## Unplanned Deviations from the Protocol
