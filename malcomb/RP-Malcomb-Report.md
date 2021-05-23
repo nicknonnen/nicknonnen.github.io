@@ -45,7 +45,7 @@ Missing data is a common occurrence in this dataset as a result of negligence or
 
 The DHS website acknowledges the high potential for inconsistent or incomplete data in such broad and expansive survey sets. Missing survey data (responses) are never estimated or made up; they are instead coded as a special response indicating the absence of data. As well, there are clear policies in place to ensure the data’s accuracy. More information about data validity can be found on the [DHS’s Data Quality and Use site](https://www.dhsprogram.com/data/Data-Quality-and-Use.cfm). In this analysis, we use the variables listed in **Table 1** to determine the average adaptive capacity of each TA area. Data transformations are outlined below.
 
-Metadata source: Burgert, C. R., Zachary, B., Colston, J. The DHS Program—Data. (2010). The DHS Program--USAID. Retrieved April 19, 2021, from [https://dhsprogram.com/Data/)](https://dhsprogram.com/Data/) ([DHS_GPS_Manual_English_A4_24May2013_DHSM9.pdf file in metadata](https://github.com/emmaclinton/RP-Malcomb/blob/main/data/metadata/DHS_GPS_Manual_English_A4_24May2013_DHSM9.pdf))
+Metadata source: Burgert, C. R., Zachary, B., Colston, J. The DHS Program—Data. (2010). The DHS Program--USAID. Retrieved April 19, 2021, from [https://dhsprogram.com/Data/](https://dhsprogram.com/Data/) and [DHS_GPS_Manual_English_A4_24May2013_DHSM9.pdf file in metadata](https://github.com/emmaclinton/RP-Malcomb/blob/main/data/metadata/DHS_GPS_Manual_English_A4_24May2013_DHSM9.pdf)
 
 **Table 1:** DHS Variables used in Analysis
 
