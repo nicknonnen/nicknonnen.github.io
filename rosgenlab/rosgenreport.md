@@ -41,7 +41,7 @@ All procedures, code, and material for this study can be found [here](https://gi
 Detailed procedures for the GRASS analysis may be found [here](https://github.com/nicknonnen/RE-rosgen/blob/main/docs/instruction/instructor_materials/1-Research_Protocol_GRASS.docx).
 The code for R Studio analysis may be found [here](/rosgenlab/2-ProfileViewer.Rmd).
 
-First, a GIS analysis of the data was conducted in GRASS. Models were used for [visualizing data](https://github.com/nicknonnen/RE-rosgen/blob/main/procedure/code/visualize.gxm) in GRASS and [calculating centerlines](https://github.com/nicknonnen/RE-rosgen/blob/main/procedure/code/center_line_length.gxm) of rivers at each study site, eliminating [steps]() in section 1.3 and 2.2 respectively.
+First, a GIS analysis of the data was conducted in GRASS. Models were used for [visualizing data](https://github.com/nicknonnen/RE-rosgen/blob/main/procedure/code/visualize.gxm) in GRASS and [calculating centerlines](https://github.com/nicknonnen/RE-rosgen/blob/main/procedure/code/center_line_length.gxm) of rivers at each study site, eliminating steps in section 1.3 and 2.2 respectively.
 
 Next, a cross-sectional graph, longitudinal profile, and flood-prone width profile were constructed in R Studio, following [this R markdown document](https://github.com/nicknonnen/RE-rosgen/blob/main/docs/instruction/instructor_materials/1-Research_Protocol_GRASS.docx). From these results, Tables 1, 2, and 3 were populated, and Rosgen Level I and Level II classifications were determined (see Tables in the Results and Discussion section).
 
