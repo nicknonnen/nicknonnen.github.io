@@ -103,7 +103,7 @@ FROM greenspacebufferdissolve;
 
 ALTER TABLE greenspacebuffers ADD COLUMN id SERIAL PRIMARY KEY;
 
-/* give each buffer a nuique id based off column number */
+/* give each buffer a unique id based off column number */
 ```
 
 Next, I distinguished which buildings were inside and outside the buffer zones. It is immediately evident that many more buildings sit outside the buffer zones than inside.
