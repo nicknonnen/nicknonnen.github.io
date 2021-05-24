@@ -202,3 +202,17 @@ UPDATE ward_flood2
 SET pop_density = wards2.totalpop / wards2.area_km2;
 
 /* end goal: visualize pop density inside buffer zones by zone as one color gradient, and outside buffer zones by ward as another color gradient */
+
+8. Ratio of houses near green space vs far away by ward
+
+/* find ratio of buildings close to green space vs distant from green space */
+
+SELECT DISTINCT greenbuffer from darbuildings, count(osm_id) as n
+WHERE greenbuffer = 1
+ORDER BY n DESC;
+
+
+SELECT greenbuffer, count(osm_id) as n
+FROM darbuildings
+GROUP BY greenbuffer
+ORDER BY n DESC;
