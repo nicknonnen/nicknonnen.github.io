@@ -210,8 +210,18 @@ SET pop_density = wards2.totalpop / wards2.area_km2;
 /* two parts to this info: greenbuffer (1 if its close to green space) AND which ward the building is in -- sum greenbuffer by ward */
 
 /*
-table wards2 has ward information, 
+table wards2 has ward information,
 */
+
+CREATE TABLE pop_density_green AS
+SELECT
+greenspacebuffers.id as id, greenspacebuffers.geom as geom1,
+COUNT(darbuildings.greenbuffer) as total_ct
+FROM greenspacebuffers
+JOIN darbuildings
+ON st_intersects(darbuildings.geom, greenspacebuffers.geom)
+GROUP BY greenspacebuffers.id;
+
 
 ALTER TABLE wards2
 ADD COLUMN buffer_buildings real;
