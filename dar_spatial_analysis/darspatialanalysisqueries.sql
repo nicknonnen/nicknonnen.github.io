@@ -212,19 +212,35 @@ SET pop_density = wards2.totalpop / wards2.area_km2;
 /*
 table wards2 has ward information,
 */
+DELETE from ward_ratio;
 
-CREATE TABLE ward_ratio AS
+
+CREATE TABLE ward_ratio2 AS
 SELECT
 wards2.id as id, wards2.utmgeom as geom1,
-COUNT(darbuildings.greenbuffer) as total_ct
+COUNT(darbuildings.greenbuffer) as near_green_buildings,
+COUNT(darbuildings.osm_id) as far_green_buildings
 FROM wards2
 JOIN darbuildings
 ON st_intersects(darbuildings.geom, wards2.utmgeom)
 GROUP BY wards2.id;
 
+ALTER TABLE ward_ratio2
+ADD COLUMN ratio real;
+
+UPDATE ward_ratio2
+SET ratio = ward_ratio2.near_green_buildings * 1.0  / ward_ratio2.far_green_buildings;
+
+/* the 1.0 changes the query to real number division */
 
 
 /*
+ALTER TABLE pop_density_green
+ADD COLUMN density_inside real;
+
+UPDATE pop_density_green
+SET density_inside = pop_density_green.total_ct / pop_density_green.area_km2_inside;
+
 ALTER TABLE wards2
 ADD COLUMN buffer_buildings real;
 
