@@ -226,7 +226,7 @@ ADD COLUMN buffer_buildings real;
 UPDATE wards2
 SET buffer_buildings = darbuildings.greenbuffer
 FROM darbuildings
-WHERE wards2.utmgeom = darbuildings.geom;
+WHERE wards2.utmgeom = darbuildings.geom; /* how to join these layers?? */
 
 
 /* now calculate ratio */
