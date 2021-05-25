@@ -24,7 +24,8 @@ So far, my model may accept an input layer, target destinations, and a distance 
 ![Model Diagram](/assets/model_diagram1.png)
 *Model Diagram - to be updated*
 
-Check back in shortly to view my completed Gravity Model and Spatial Analysis of hospital catchments in the Northeast US. The next steps of this assignment involve creating a model to preprocess hospital data (sourced from the Department of Homeland Security), grouping the remaining hospitals by town (sourced from the American Community Survey 2018 5-year, provided by Joe Holler), and running the spatial interaction model. This spatial interaction will then be displayed in a map format and compared to a hospital service area visualization by the the Dartmouth Health Atlas.
+[Here](file:///Users/nicholasnonnenmacher/Desktop/Nicholas'%20Documents/Middlebury%2020-21%20/Spring%202021/OpenSource%20GIS/nicknonnen.github.io/gravity/assets/qgis2web_2021_05_25-14_16_08_019603/index.html#6/42.585/-74.861) is an interactive map of the Hospital Service Areas created by this Gravity Model, comparing those catchment areas to those used by the [Dartmouth Health Atlas](https://data.dartmouthatlas.org/supplemental/#boundaries).
+
 
 Thank you to Professor Joe Holler and my class peers in Spring 2021 GEOG 323 for assistance, conversations, and thoughts while deliberating this assignment.
 
