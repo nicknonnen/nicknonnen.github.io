@@ -211,18 +211,18 @@ The initial SQL exercise studying Dar es Salaam flood risk conducted by Joe Holl
 
 Here is a map [summarizing building density distribution in relation to green space in Dar es Salaam.](/dar_spatial_analysis/assets/)
 
-These results show that there is a general positive correlation between high-density wards and high-density buffer zones - implying urban green space does not significantly influence proximate building density. As seen in Figures 1 and 2, the highest-density wards are situated in the center of the city along the coastline, and overlap with the major cluster of urban green points. This is further supported in Figure 3, where the darkest-blue buffer zones are most represented in the same city center region.
+These results show that there is a general positive correlation between high-density wards and high-density buffer zones - implying urban green space does not significantly influence proximate building density. As seen in Figures 1 and 2, the highest-density wards are situated in the center of the city along the coastline, and overlap with the major cluster of urban green points. This is further supported in Figure 3, where the darkest-blue buffer zones are most represented in the same city center region. Furthermore, many of the wards
 
 There are a few notable exceptions to this pattern. A range of third-quintile buffer zones are found just to the northeast of the city center clusters, representing a noticeable beachfront community. More examples may be seen in the western-most wards of the city, where a few fourth- and third-quintile buffer zones linger even as the overall ward density drops to second- and first-quintiles.
 
-![Figure 1. wards density](/dar_spatial_analysis/assets/warddensitymap4.png)
-Figure 1. Building density by city ward in Dar es Salaam in 2018. Data obtained from Resilience Academy and OSM (Basemap: OSM).
+![Figure 1. green space points](/dar_spatial_analysis/assets/greenspacepointsmap2.png)
+Figure 1. Green space in Dar es Salaam in 2019, represented as points. Data obtained from Resilience Academy and OSM (Basemap: OSM).
 
-![Figure 2. green space points](/dar_spatial_analysis/assets/greenspacepointsmap2.png)
-Figure 2. Green space in Dar es Salaam in 2019, represented as points. Data obtained from Resilience Academy and OSM (Basemap: OSM).
+![Figure 2. pop density in buffer zones](/dar_spatial_analysis/assets/bufferdensitymap2.png)
+Figure 2. Building density by green space buffer zone in Dar es Salaam in 2019. Data obtained from Resilience Academy and OSM (Basemap: OSM).
 
-![Figure 3. pop density in buffer zones](/dar_spatial_analysis/assets/bufferdensitymap2.png)
-Figure 3. Building density by green space buffer zone in Dar es Salaam in 2019. Data obtained from Resilience Academy and OSM (Basemap: OSM).
+![Figure 3. wards density](/dar_spatial_analysis/assets/warddensitymap4.png)
+Figure 3. Building density by city ward in Dar es Salaam in 2018. Data obtained from Resilience Academy and OSM (Basemap: OSM).
 
 ![Figure 4. ratio of buildings near to far](/dar_spatial_analysis/assets/ratiomap1.png)
 Figure 4. The ratio of buildings near urban greenspace to buildings far from urban greenspace, delineated by ward. Data obtained from Resilience Academy and OSM (Basemap: OSM).
