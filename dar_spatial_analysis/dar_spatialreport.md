@@ -201,7 +201,7 @@ SET ratio = ward_ratio2.near_green_buildings * 1.0  / ward_ratio2.far_green_buil
 /* the field near_green_buildings was multiplied by 1.0 here in order for SQL to recognize the query as real number division */
 ```
 
-From here, I added the 'wards2', 'pop_density_green', and 'ward_ratio2' layers into a QGIS file and created a chloropleth map from the building density data (Figures 1, 3, and 4). I also added the greenspace centroid points before buffers were added, to visualize where the urban green space actually is in the city in a separate map (Figure 2). An OSM Standard basemap was added to all three figures for easier viewing. Additionally, a Leaflet interactive map was created to better understand how building density changes in relation to ward and the presence of urban green spaces.
+From here, I added the 'wards2', 'pop_density_green', and 'ward_ratio2' layers into a QGIS file and created chloropleth maps from the building density data (Figures 1, 3, and 4). I also added the greenspace centroid points before buffers were added, to visualize where the urban green space actually is in the city in a separate map (Figure 2). An OSM Standard basemap was added to all four figures for easier viewing. Additionally, a Leaflet interactive map was created to better understand how building density changes in relation to ward and the presence of urban green spaces.
 
 The .sql document containing all of my queries may be found [here](/dar_spatial_analysis/darspatialanalysisqueries.sql).
 The initial SQL exercise studying Dar es Salaam flood risk conducted by Joe Holler and the Middlebury College spring 2021 GEOG 323 class may be found [here](/dar_spatial_analysis/osm_sql.sql).
