@@ -3,7 +3,8 @@ layout: page
 title: Gravity Model Spatial Interaction
 ---
 
-Updated 03/08/2021 9:00pm
+Updated 05/25/2021
+
 
 ### Background and Introduction
 
@@ -14,6 +15,7 @@ In this lab, I'm using a model to determine the service area "catchment" areas f
 **((InputWeight)^λ * (TargetWeight)^α) / (Distance)^β**
 
 All three exponent parameters, λ, α, and β, are modifiable by the user of the model. The β parameter is set to a default value of 2, due to the more significant influence distance has on the interaction of two points in space, while parameters λ and α are set to a default value of 1.
+
 
 ### Methods and Results
 
@@ -40,9 +42,10 @@ Figure 3. A comparison of catchment areas created by this gravity model and thos
 
 As seen in the map, the blue and red lines (representing the boundaries for these catchment areas and Dartmouth's catchment areas, respectively) do not match in many places. This could be due to a variety of reasons, most likely pertaining to the fact that this gravity model did not use a network distance matrix, and also did not account for physical geographic features such as bodies of water or mountains. This means the HSAs calculated by my model is significantly less precise.
 
+
 ### Unexpected Challenges
 
-I encountered many challenges in connecting the output of the distance matrix algorithm to the aggregate function outputting the product of the input and target weights, as well as experiencing some smaller technical issues in QGIS setting automatic "maximum" default values for λ, α, and β parameters. In addition, some unexpected challenges appeared while creating my Leaflet map, some of which are outstanding: the .html code failed to render a title on my map, and no abstract appears in the final version. 
+I encountered many challenges in connecting the output of the distance matrix algorithm to the aggregate function outputting the product of the input and target weights, as well as experiencing some smaller technical issues in QGIS setting automatic "maximum" default values for λ, α, and β parameters. In addition, some unexpected challenges appeared while creating my Leaflet map, some of which are outstanding: the .html code failed to render a title on my map, and no abstract appears in the final version.
 
 
 ### Acknowledgements
