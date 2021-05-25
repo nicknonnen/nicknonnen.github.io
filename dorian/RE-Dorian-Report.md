@@ -17,7 +17,7 @@ Nick Nonnenmacher
 Replication Materials Available at: [nicknonnen/RE-Dorian](https://github.com/nicknonnen/RE-Dorian)
 
 Created: `05 May 2021`
-Revised: `12 May 2021`
+Revised: `25 May 2021`
 
 ## Abstract
 
@@ -203,7 +203,7 @@ Figure 6. The National Weather Service Storm Prediction Center's Severe Weather 
 
 Fortunately, this analysis did not suffer any significant unplanned deviations from the replication protocol prepared by Joe Holler in 2019. However, during my initial run-through of this code after debugging and refining code, I realized I had forgotten to include data from a temporally distant timeline with which I could compare tornado-related Twitter activity during early May. To remedy this, I ran another data pull on the morning of May 11th, 2021 (6 days after my initial pull), to access and include any verified and unverified tweets from the same geographic region. I was then able to effectively incorporate this data back into my code using the scaffold provided by Professor Holler and complete my analysis as an accurate replication.  
 
-While not necessarily an unplanned deviation from protocol, this replication effort did diverge from the original studies in one notable way: while collecting tweets with the four keywords 'tornado', 'Atlanta', 'mswx', and 'Txwx', I structured my query in such a way that tweets with any of those four words would appear in my dataset. This was done by placing an 'OR' between each term, instead of an 'AND' after tornado and an 'OR' in between the remaining three. As a consequence of this semantic error, the tweets I analyzed could have been pertaining to anything related to any of those four terms, *not* specifically tornados. This was likely the cause of the high volume of Atlanta-related tweets seen in Figure 3, discussed below. If this issue occurs in future replications or studies involving Twitter data, it is possible to filter collected data using the `dyplr` library. 
+While not necessarily an unplanned deviation from protocol, this replication effort did diverge from the original studies in one notable way: while collecting tweets with the four keywords 'tornado', 'Atlanta', 'mswx', and 'Txwx', I structured my query in such a way that tweets with any of those four words would appear in my dataset. This was done by placing an 'OR' between each term, instead of an 'AND' after tornado and an 'OR' in between the remaining three. As a consequence of this semantic error, the tweets I analyzed could have been pertaining to anything related to any of those four terms, *not* specifically tornados. This was likely the cause of the high volume of Atlanta-related tweets seen in Figure 3, discussed below. If this issue occurs in future replications or studies involving Twitter data, it is possible to filter collected data using the `dyplr` library.
 
 
 ## Discussion
@@ -230,15 +230,18 @@ As the production of big datasets through social media platforms continues to ev
 
 ## References
 
-https://www.nytimes.com/2021/05/03/us/tornadoes-mississippi-atlanta.html - NYT article on the May 2-4 tornados
-https://www.washingtonpost.com/weather/2021/05/03/mississippi-tornadoes-severe-thunderstorm-threat/ - Washington Post article on same storms
-https://www.spc.noaa.gov/wcm/ - NWS storm prediction center
+Cappuci, M. 2021. Severe weather threatens millions in Plains and South after damaging tornados in Mississippi, Georgia. *The Washington Post*, May 03. Access May 11, 2021. [https://www.washingtonpost.com/weather/2021/05/03/mississippi-tornadoes-severe-thunderstorm-threat/](https://www.washingtonpost.com/weather/2021/05/03/mississippi-tornadoes-severe-thunderstorm-threat/)
 
 Crawford, K., and M. Finn. 2014. The limits of crisis data: analytical and ethical challenges of using social and mobile data to understand disasters. GeoJournal 80 (4):491–502. [DOI:10.1007/s10708-014-9597-z](https://github.com/GIS4DEV/literature/blob/master/The%20limits%20of%20crisis%20data%20analytical%20and%20ethical%20challenges%20of%20using%20social%20and%20mobile%20data%20to%20understand%20disasters.pdf).
 
 Isaac, Mike. 2021. Facebook posts a 33 percent increase jump in revenue and a 53 percent jump in profit. *New York Times*, Jan 27. Accessed May 11, 2021. [https://www.nytimes.com/2021/01/27/business/facebook-earnings.html](https://www.nytimes.com/2021/01/27/business/facebook-earnings.html).
 
+Jimenez, J. 2021. Severe Weather Threatens South as Tornados Tear Across 4 States. *New York Times*, May 03. Accessed May 11, 2021. [https://www.nytimes.com/2021/05/03/us/tornadoes-mississippi-atlanta.html](https://www.nytimes.com/2021/05/03/us/tornadoes-mississippi-atlanta.html)
+
+Storm Prediction Center, NOAA's National Weather Service. [https://www.spc.noaa.gov/wcm/](https://www.spc.noaa.gov/wcm/)
+
 Wang, Z., X. Ye, and M. H. Tsou. 2016. Spatial, temporal, and content analysis of Twitter for wildfire hazards. Natural Hazards 83 (1):523–540. [DOI:10.1007/s11069-016-2329-6](https://link.springer.com/article/10.1007/s11069-016-2329-6).
+
 
 ####  Report Template References & License
 
