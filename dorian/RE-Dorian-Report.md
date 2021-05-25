@@ -21,7 +21,7 @@ Revised: `12 May 2021`
 
 ## Abstract
 
-Data looks different with each passing day. As more and more human beings are connected to each other and the world around them through social media platforms such as Twitter, more information about personal lives, the physical world, and the relationships that bind us together may be collected and stored in public repositories, available for researchers to utilize and apply to a wide range of new studies.
+As more and more human beings are connected to each other and the world around them through social media platforms such as Twitter, more information about personal lives, the physical world, and the relationships that bind us together may be collected and stored in public repositories, available for researchers to utilize and apply to a wide range of new studies.
 
 One new application is to assist in disaster aid, management, and research, as demonstrated by Wang et al. (2016) in their study on wildfires in California. There, it was concluded that "social media can characterize a disaster across space and over time" (Wang et al. 2016), meaning useful applications may be drawn from their analysis. To further support this, it was found people's geographic awareness is very strong during disaster events, and that people were interested in communicating information regarding damage and the physical nature of the event as it unfolded.
 
