@@ -207,12 +207,13 @@ SET pop_density = wards2.totalpop / wards2.area_km2;
 
 /* find ratio of buildings close to green space vs distant from green space */
 
-SELECT DISTINCT greenbuffer from darbuildings, count(osm_id) as n
-WHERE greenbuffer = 1
-ORDER BY n DESC;
+/* two parts to this info: greenbuffer (1 if its close to green space) AND which ward the building is in -- sum greenbuffer by ward */
 
-
-SELECT greenbuffer, count(osm_id) as n
-FROM darbuildings
-GROUP BY greenbuffer
-ORDER BY n DESC;
+CREATE TABLE pop_density_green AS
+SELECT
+greenspacebuffers.id as id, greenspacebuffers.geom as geom1,
+COUNT(darbuildings.greenbuffer) as total_ct
+FROM greenspacebuffers
+JOIN darbuildings
+ON st_intersects(darbuildings.geom, greenspacebuffers.geom)
+GROUP BY greenspacebuffers.id;
