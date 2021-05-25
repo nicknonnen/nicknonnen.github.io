@@ -179,7 +179,29 @@ UPDATE ward_flood2
 SET pop_density = wards2.totalpop / wards2.area_km2;
 ```
 
-From here, I added the 'wards2' and 'pop_density_green' layers into a QGIS file and created a chloropleth map from the building density data (Figures 1 and 3). I also added the greenspace centroid points before buffers were added, to visualize where the urban green space actually is in the city in a separate map (Figure 2). An OSM Standard basemap was added to all three figures for easier viewing. Additionally, a Leaflet interactive map was created to better understand how building density changes in relation to ward and the presence of urban green spaces.
+The final step, in order to visualize all of my results in the spatial frame of the census wards, was to determine the ratio of buildings close to urban greenspace (ie, buildings within the 500m buffer zone) to buildings far from urban greenspace, by each ward. This was done through another join function, similar to when I joined building points and buffer zones, followed by a simple ratio calculation.
+
+```
+CREATE TABLE ward_ratio2 AS
+SELECT
+wards2.id as id, wards2.utmgeom as geom1,
+COUNT(darbuildings.greenbuffer) as near_green_buildings,
+COUNT(darbuildings.osm_id) as far_green_buildings
+FROM wards2
+JOIN darbuildings
+ON st_intersects(darbuildings.geom, wards2.utmgeom)
+GROUP BY wards2.id;
+
+ALTER TABLE ward_ratio2
+ADD COLUMN ratio real;
+
+UPDATE ward_ratio2
+SET ratio = ward_ratio2.near_green_buildings * 1.0  / ward_ratio2.far_green_buildings;
+
+/* the field near_green_buildings was multiplied by 1.0 here in order for SQL to recognize the query as real number division */
+```
+
+From here, I added the 'wards2', 'pop_density_green', and 'ward_ratio2' layers into a QGIS file and created a chloropleth map from the building density data (Figures 1, 3, and 4). I also added the greenspace centroid points before buffers were added, to visualize where the urban green space actually is in the city in a separate map (Figure 2). An OSM Standard basemap was added to all three figures for easier viewing. Additionally, a Leaflet interactive map was created to better understand how building density changes in relation to ward and the presence of urban green spaces.
 
 The .sql document containing all of my queries may be found [here](/dar_spatial_analysis/darspatialanalysisqueries.sql).
 The initial SQL exercise studying Dar es Salaam flood risk conducted by Joe Holler and the Middlebury College spring 2021 GEOG 323 class may be found [here](/dar_spatial_analysis/osm_sql.sql).
@@ -201,6 +223,9 @@ Figure 2. Green space in Dar es Salaam in 2019, represented as points. Data obta
 
 ![Figure 3. pop density in buffer zones](/dar_spatial_analysis/assets/bufferdensitymap2.png)
 Figure 3. Building density by green space buffer zone in Dar es Salaam in 2019. Data obtained from Resilience Academy and OSM (Basemap: OSM).
+
+![Figure 4. ratio of buildings near to far](/dar_spatial_analysis/assets/ratiomap1.png)
+Figure 4. The ratio of buildings near urban greenspace to buildings far from urban greenspace, delineated by ward. Data obtained from Resilience Academy and OSM (Basemap: OSM).
 
 In conclusion, the results of this analysis simply suggest that urban green space has been incorporated in regions of the city where building density is already high. Past studies have demonstrated there may be direct and indirect human health benefits to increasing the abundance of nature and natural places in modern urban space (van Leeuwen, Nijkamp, and de Norohna Vaz 2011, Lee and Maheswaran 2011, De Ridder et al 2004), and this may prove even more significant in rapidly-developing cities such as Dar es Salaam. Green spaces have been shown to provide cooling effects in dense urban centers, enhance local air quality, and even improve the use of nearby farmland (van Leeuwen, Nijkamp, and de Norohna Vaz 2011). As Dar es Salaam continues to grow in size and population over the next decade, pointed effort must be devoted to the city's infrastrcture and use of natural resources in order to provide a safe and healthy economic and cultural hub for Tanzania and east Africa.
 
