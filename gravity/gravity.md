@@ -28,7 +28,7 @@ Here is the completed gravity model used to create HSAs. The file is available f
 ![gravitymodel](/assets/gravitymodel.png)
 Figure 2. The Gravity Model.
 
-This model accepts an input layer, target destinations, and a distance value.
+This model accepts an input layer, target destinations, and a distance value. It returns a polygon that represents the area which a hospital has the potential to serve. When combined with 
 
 ### Unexpected Challenges
 
