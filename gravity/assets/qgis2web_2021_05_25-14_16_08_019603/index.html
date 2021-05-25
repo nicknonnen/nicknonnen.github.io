@@ -230,29 +230,8 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['HSA93'] !== null ? autolinker.link(feature.properties['HSA93'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">HSANAME</th>\
+                        <th scope="row">HSA Name</th>\
                         <td>' + (feature.properties['HSANAME'] !== null ? autolinker.link(feature.properties['HSANAME'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['STATE'] !== null ? autolinker.link(feature.properties['STATE'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['HRR93'] !== null ? autolinker.link(feature.properties['HRR93'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['HRR93_NAME'] !== null ? autolinker.link(feature.properties['HRR93_NAME'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Persons90'] !== null ? autolinker.link(feature.properties['Persons90'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['hosp_cnt'] !== null ? autolinker.link(feature.properties['hosp_cnt'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['HSA_label'] !== null ? autolinker.link(feature.properties['HSA_label'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
