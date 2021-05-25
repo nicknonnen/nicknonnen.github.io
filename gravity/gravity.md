@@ -24,7 +24,7 @@ Data Sources:
 - Hospital Data: [Homeland Security](https://hifld-geoplatform.opendata.arcgis.com/datasets/6ac5e325468c4cb9b905f1728d6fbf0f_0)
 - Dartmouth Atlas of Health Care [boundary files](https://atlasdata.dartmouth.edu/downloads/supplemental#boundaries)
 
-In this exercise, I analyzed the interactions of towns and hospital clusters in the Northeast US and then compared those catchment areas to the those of the Dartmouth Health Atlas. The aggregated results may be found in [this](file:///Users/nicholasnonnenmacher/Desktop/Nicholas'%20Documents/Middlebury%2020-21%20/Spring%202021/OpenSource%20GIS/nicknonnen.github.io/gravity/assets/qgis2web_2021_05_25-14_16_08_019603/index.html#6/42.585/-74.861) interactive Leaflet map.
+In this exercise, I analyzed the interactions of towns and hospital clusters in the Northeast US and then compared those catchment areas to the those of the Dartmouth Health Atlas. The aggregated results may be found in [this](/assets/qgis2web_2021_05_25-14_16_08_019603/index.html) interactive Leaflet map.
 
 Here is the preprocessing model used to clean hospital data. This model is available for download [here](hospital_preProcessing.model3).
 ![preprocessing_model](/assets/preprocessing_model.png)
@@ -35,7 +35,7 @@ Here is the completed gravity model used to create HSAs. The file is available f
 ![gravitymodel](/assets/gravitymodel.png)
 Figure 2. The Gravity Model.
 
-This model accepts an input layer, target destinations, and a distance value, and was then used to combine a linear distance matrix and population data to determine hospital service areas, or HSAs, for the states of New England (this study also includes New York, Pennsylvania, and New Jersey). The final product may be found [here](file:///Users/nicholasnonnenmacher/Desktop/Nicholas'%20Documents/Middlebury%2020-21%20/Spring%202021/OpenSource%20GIS/nicknonnen.github.io/gravity/assets/qgis2web_2021_05_25-14_16_08_019603/index.html#6/42.585/-74.861), where these HSA catchment areas are then compared to those used by the [Dartmouth Health Atlas](https://data.dartmouthatlas.org/supplemental/#boundaries). A static version of the map may be found below in Figure 3.
+This model accepts an input layer, target destinations, and a distance value, and was then used to combine a linear distance matrix and population data to determine hospital service areas, or HSAs, for the states of New England (this study also includes New York, Pennsylvania, and New Jersey). The final product may be found [here](/assets/qgis2web_2021_05_25-14_16_08_019603/index.html), where these HSA catchment areas are then compared to those used by the [Dartmouth Health Atlas](https://data.dartmouthatlas.org/supplemental/#boundaries). A static version of the map may be found below in Figure 3.
 
 ![HSA_comparisons](/assets/HSA_comparisons.png)
 Figure 3. A comparison of catchment areas created by this gravity model and those used by the Dartmouth Atlas of Health Care.
