@@ -38,12 +38,13 @@ This model accepts an input layer, target destinations, and a distance value, an
 ![HSA_comparisons](/assets/HSA_comparisons.png)
 Figure 3. A comparison of catchment areas created by this gravity model and those used by the Dartmouth Atlas of Health Care.
 
-As seen in the map, the blue and red lines (representing the boundaries for these catchment areas and Dartmouth's catchment areas, respectively) do not match in many places. This could be due to a variety of reasons, most likely pertaining to the fact that this gravity model did not use a network distance matrix, and also did not account for physical geographic features such as bodies of water or mountains. This means the HSAs calculated by my model is significantly less precise. 
+As seen in the map, the blue and red lines (representing the boundaries for these catchment areas and Dartmouth's catchment areas, respectively) do not match in many places. This could be due to a variety of reasons, most likely pertaining to the fact that this gravity model did not use a network distance matrix, and also did not account for physical geographic features such as bodies of water or mountains. This means the HSAs calculated by my model is significantly less precise.
 
 ### Unexpected Challenges
 
-However, I have encountered many challenges in connecting the output of the distance matrix algorithm to the aggregate function outputting the product of the input and target weights, as well as experiencing some smaller technical issues in QGIS setting automatic "maximum" default values for λ, α, and β parameters. I know much of my model is unfinished, and as I work to fill in the gaps in the near future, I am certain I will encounter even more challenges I do not even know about yet.
+I encountered many challenges in connecting the output of the distance matrix algorithm to the aggregate function outputting the product of the input and target weights, as well as experiencing some smaller technical issues in QGIS setting automatic "maximum" default values for λ, α, and β parameters. In addition, some unexpected challenges appeared while creating my Leaflet map, some of which are outstanding: the .html code failed to render a title on my map, and no abstract appears in the final version. 
 
 
+### Acknowledgements
 
-Thank you to Professor Joe Holler and my class peers in Spring 2021 GEOG 323 for assistance, conversations, and thoughts while deliberating this assignment.
+This project was certainly the most difficult of the semester, and I have many peers to thank for their help in guiding me to its completion. Thank you Hannah Rigdon for help in completing my Leaflet map, and thank you Emma Brown and Brooke Laird for help in completing the gravity model and preprocessing model. Thank you very much to Professor Joe Holler for providing data sources and guiding me through the technical and formatting logistics of this project. Thank you to all of my other my class peers in Spring 2021 GEOG 323 for assistance, conversations, and thoughts while deliberating this assignment.
