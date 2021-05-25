@@ -213,16 +213,18 @@ SET pop_density = wards2.totalpop / wards2.area_km2;
 table wards2 has ward information,
 */
 
-CREATE TABLE pop_density_green AS
+CREATE TABLE ward_ratio AS
 SELECT
-greenspacebuffers.id as id, greenspacebuffers.geom as geom1,
+wards2.id as id, wards2.utmgeom as geom1,
 COUNT(darbuildings.greenbuffer) as total_ct
-FROM greenspacebuffers
+FROM wards2
 JOIN darbuildings
-ON st_intersects(darbuildings.geom, greenspacebuffers.geom)
-GROUP BY greenspacebuffers.id;
+ON st_intersects(darbuildings.geom, wards2.utmgeom)
+GROUP BY wards2.id;
 
 
+
+/*
 ALTER TABLE wards2
 ADD COLUMN buffer_buildings real;
 
@@ -230,7 +232,7 @@ UPDATE wards2
 SET buffer_buildings = darbuildings.greenbuffer
 FROM darbuildings
 WHERE wards2.id = darbuildings.osm_id; /* how to join these layers?? */
-
+*/
 
 /* now calculate ratio */
 
