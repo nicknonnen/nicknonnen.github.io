@@ -19,13 +19,20 @@ All three exponent parameters, λ, α, and β, are modifiable by the user of the
 
 In this exercise, I analyzed the interactions of towns and hospital clusters in the Northeast US and then compared those catchment areas to the those of the Dartmouth Health Atlas. The aggregated results may be found in [this](file:///Users/nicholasnonnenmacher/Desktop/Nicholas'%20Documents/Middlebury%2020-21%20/Spring%202021/OpenSource%20GIS/nicknonnen.github.io/gravity/assets/qgis2web_2021_05_25-14_16_08_019603/index.html#6/42.585/-74.861) interactive Leaflet map.
 
-My workflow is represented in part here.
+Here is the preprocessing model used to clean hospital data. This model is available for download [here](hospital_preProcessing.model3).
+![preprocessing_model](/assets/preprocessing_model.png)
+Figure 1. To clean and prepare hospital data, all private and specialized hospitals were removed from the data pool.
 
-![Gravity Spatial Model Workflow 1](/assets/workflow1.3.png)
-![Gravity Spatial Model Workflow 2](/assets/workflow1.4.png)
-*Gravity Model Spatial Interaction Workflow - to be updated*
+Here is the completed gravity model used to create HSAs. The file is available for download [here](/assets/gravityModel.model3).
 
-So far, my model may accept an input layer, target destinations, and a distance value. However, I have encountered many challenges in connecting the output of the distance matrix algorithm to the aggregate function outputting the product of the input and target weights, as well as experiencing some smaller technical issues in QGIS setting automatic "maximum" default values for λ, α, and β parameters. I know much of my model is unfinished, and as I work to fill in the gaps in the near future, I am certain I will encounter even more challenges I do not even know about yet.
+![gravitymodel](/assets/gravitymodel.png)
+Figure 2. The Gravity Model.
+
+This model accepts an input layer, target destinations, and a distance value.
+
+### Unexpected Challenges
+
+However, I have encountered many challenges in connecting the output of the distance matrix algorithm to the aggregate function outputting the product of the input and target weights, as well as experiencing some smaller technical issues in QGIS setting automatic "maximum" default values for λ, α, and β parameters. I know much of my model is unfinished, and as I work to fill in the gaps in the near future, I am certain I will encounter even more challenges I do not even know about yet.
 
 ![Model Diagram](/assets/model_diagram1.png)
 *Model Diagram - to be updated*
