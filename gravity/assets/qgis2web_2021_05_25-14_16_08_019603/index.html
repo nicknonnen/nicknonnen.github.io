@@ -8,6 +8,7 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <link rel="stylesheet" href="css/leaflet.css">
         <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/leaflet-measure.css">
         <style>
         html, body, #map {
             width: 100%;
@@ -16,7 +17,7 @@
             margin: 0;
         }
         </style>
-        <title>Hospital Service Areas in New England</title>
+        <title></title>
     </head>
     <body>
         <div id="map">
@@ -31,16 +32,45 @@
         <script src="js/rbush.min.js"></script>
         <script src="js/labelgun.min.js"></script>
         <script src="js/labels.js"></script>
+        <script src="js/leaflet-measure.js"></script>
         <script src="data/GravityModelHSAs_1.js"></script>
         <script src="data/NewEnglandHospitals_2.js"></script>
         <script src="data/DartmouthHSAs_3.js"></script>
         <script>
+        var highlightLayer;
+        function highlightFeature(e) {
+            highlightLayer = e.target;
+
+            if (e.target.feature.geometry.type === 'LineString') {
+              highlightLayer.setStyle({
+                color: '#ffff00',
+              });
+            } else {
+              highlightLayer.setStyle({
+                fillColor: '#ffff00',
+                fillOpacity: 1
+              });
+            }
+            highlightLayer.openPopup();
+        }
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
-        }).fitBounds([[37.924013212612614,-81.1301333126126],[47.437273171171206,-66.8816375126126]]);
+        }).fitBounds([[37.80277976486487,-80.8520095207207],[47.316039723423465,-66.6035137207207]]);
         var hash = new L.Hash(map);
-        map.attributionControl.setPrefix('<a href="https://nicknonnen.github.io" target="_blank">Nick Nonnenmacher</a> &middot;<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
+        var measureControl = new L.Control.Measure({
+            position: 'topleft',
+            primaryLengthUnit: 'meters',
+            secondaryLengthUnit: 'kilometers',
+            primaryAreaUnit: 'sqmeters',
+            secondaryAreaUnit: 'hectares'
+        });
+        measureControl.addTo(map);
+        document.getElementsByClassName('leaflet-control-measure-toggle')[0]
+        .innerHTML = '';
+        document.getElementsByClassName('leaflet-control-measure-toggle')[0]
+        .className += ' fas fa-ruler';
         var bounds_group = new L.featureGroup([]);
         function setBounds() {
         }
@@ -58,16 +88,31 @@
         layer_OpenStreetMap_0;
         map.addLayer(layer_OpenStreetMap_0);
         function pop_GravityModelHSAs_1(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (i in e.target._eventParents) {
+                        e.target._eventParents[i].resetStyle(e.target);
+                    }
+                    if (typeof layer.closePopup == 'function') {
+                        layer.closePopup();
+                    } else {
+                        layer.eachLayer(function(feature){
+                            feature.closePopup()
+                        });
+                    }
+                },
+                mouseover: highlightFeature,
+            });
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['new_field'] !== null ? autolinker.link(feature.properties['new_field'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">Total Beds</th>\
+                        <th scope="row">TargetWeig</th>\
                         <td>' + (feature.properties['TargetWeig'] !== null ? autolinker.link(feature.properties['TargetWeig'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">Population Served</th>\
+                        <th scope="row">sumInputWe</th>\
                         <td>' + (feature.properties['sumInputWe'] !== null ? autolinker.link(feature.properties['sumInputWe'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
@@ -102,6 +147,21 @@
         bounds_group.addLayer(layer_GravityModelHSAs_1);
         map.addLayer(layer_GravityModelHSAs_1);
         function pop_NewEnglandHospitals_2(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (i in e.target._eventParents) {
+                        e.target._eventParents[i].resetStyle(e.target);
+                    }
+                    if (typeof layer.closePopup == 'function') {
+                        layer.closePopup();
+                    } else {
+                        layer.eachLayer(function(feature){
+                            feature.closePopup()
+                        });
+                    }
+                },
+                mouseover: highlightFeature,
+            });
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['OBJECTID'] !== null ? autolinker.link(feature.properties['OBJECTID'].toLocaleString()) : '') + '</td>\
@@ -110,7 +170,7 @@
                         <td colspan="2">' + (feature.properties['ID'] !== null ? autolinker.link(feature.properties['ID'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">Name</th>\
+                        <th scope="row">NAME</th>\
                         <td>' + (feature.properties['NAME'] !== null ? autolinker.link(feature.properties['NAME'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -192,7 +252,7 @@
                         <td colspan="2">' + (feature.properties['TTL_STAFF'] !== null ? autolinker.link(feature.properties['TTL_STAFF'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">Beds</th>\
+                        <th scope="row">BEDS</th>\
                         <td>' + (feature.properties['BEDS'] !== null ? autolinker.link(feature.properties['BEDS'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -209,7 +269,7 @@
             return {
                 pane: 'pane_NewEnglandHospitals_2',
                 shape: 'diamond',
-                radius: 4.800000000000001,
+                radius: 4.8,
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -243,12 +303,28 @@
         bounds_group.addLayer(layer_NewEnglandHospitals_2);
         map.addLayer(layer_NewEnglandHospitals_2);
         function pop_DartmouthHSAs_3(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (i in e.target._eventParents) {
+                        e.target._eventParents[i].resetStyle(e.target);
+                    }
+                    if (typeof layer.closePopup == 'function') {
+                        layer.closePopup();
+                    } else {
+                        layer.eachLayer(function(feature){
+                            feature.closePopup()
+                        });
+                    }
+                },
+                mouseover: highlightFeature,
+            });
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['HSA93'] !== null ? autolinker.link(feature.properties['HSA93'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['HSANAME'] !== null ? autolinker.link(feature.properties['HSANAME'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">HSANAME</th>\
+                        <td>' + (feature.properties['HSANAME'] !== null ? autolinker.link(feature.properties['HSANAME'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['STATE'] !== null ? autolinker.link(feature.properties['STATE'].toLocaleString()) : '') + '</td>\
@@ -260,12 +336,10 @@
                         <td colspan="2">' + (feature.properties['HRR93_NAME'] !== null ? autolinker.link(feature.properties['HRR93_NAME'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">Persons90</th>\
-                        <td>' + (feature.properties['Persons90'] !== null ? autolinker.link(feature.properties['Persons90'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['Persons90'] !== null ? autolinker.link(feature.properties['Persons90'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">hosp_cnt</th>\
-                        <td>' + (feature.properties['hosp_cnt'] !== null ? autolinker.link(feature.properties['hosp_cnt'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['hosp_cnt'] !== null ? autolinker.link(feature.properties['hosp_cnt'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['HSA_label'] !== null ? autolinker.link(feature.properties['HSA_label'].toLocaleString()) : '') + '</td>\
@@ -301,6 +375,8 @@
         });
         bounds_group.addLayer(layer_DartmouthHSAs_3);
         map.addLayer(layer_DartmouthHSAs_3);
+        var baseMaps = {};
+        L.control.layers(baseMaps,{'<img src="legend/DartmouthHSAs_3.png" /> Dartmouth HSAs': layer_DartmouthHSAs_3,'<img src="legend/NewEnglandHospitals_2.png" /> New England Hospitals': layer_NewEnglandHospitals_2,'<img src="legend/GravityModelHSAs_1.png" /> Gravity Model HSAs': layer_GravityModelHSAs_1,"OpenStreetMap": layer_OpenStreetMap_0,}).addTo(map);
         setBounds();
         </script>
     </body>
