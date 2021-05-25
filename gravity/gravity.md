@@ -15,9 +15,11 @@ In this lab, I'm using a model to determine the service area "catchment" areas f
 
 All three exponent parameters, λ, α, and β, are modifiable by the user of the model. The β parameter is set to a default value of 2, due to the more significant influence distance has on the interaction of two points in space, while parameters λ and α are set to a default value of 1.
 
-### Results
+### Methods and Results
 
-In this exercise, I analyzed the interactions of towns and hospital clusters in the Northeast US and then compared those catchment areas to the those of the Dartmouth Health Atlas.
+In this exercise, I analyzed the interactions of towns and hospital clusters in the Northeast US and then compared those catchment areas to the those of the Dartmouth Health Atlas. The aggregated results may be found in [this](file:///Users/nicholasnonnenmacher/Desktop/Nicholas'%20Documents/Middlebury%2020-21%20/Spring%202021/OpenSource%20GIS/nicknonnen.github.io/gravity/assets/qgis2web_2021_05_25-14_16_08_019603/index.html#6/42.585/-74.861) interactive Leaflet map.
+
+My workflow is represented in part here.
 
 ![Gravity Spatial Model Workflow 1](/assets/workflow1.3.png)
 ![Gravity Spatial Model Workflow 2](/assets/workflow1.4.png)
@@ -28,7 +30,11 @@ So far, my model may accept an input layer, target destinations, and a distance 
 ![Model Diagram](/assets/model_diagram1.png)
 *Model Diagram - to be updated*
 
-[Here](file:///Users/nicholasnonnenmacher/Desktop/Nicholas'%20Documents/Middlebury%2020-21%20/Spring%202021/OpenSource%20GIS/nicknonnen.github.io/gravity/assets/qgis2web_2021_05_25-14_16_08_019603/index.html#6/42.585/-74.861) is an interactive map of the Hospital Service Areas created by this Gravity Model, comparing those catchment areas to those used by the [Dartmouth Health Atlas](https://data.dartmouthatlas.org/supplemental/#boundaries).
+This model was then used to combine a linear distance matrix and population data to determine hospital service areas, or HSAs, for the states of New England (this study also includes New York, Pennsylvania, and New Jersey). The final product may be found [here](file:///Users/nicholasnonnenmacher/Desktop/Nicholas'%20Documents/Middlebury%2020-21%20/Spring%202021/OpenSource%20GIS/nicknonnen.github.io/gravity/assets/qgis2web_2021_05_25-14_16_08_019603/index.html#6/42.585/-74.861), where these HSA catchment areas are then compared to those used by the [Dartmouth Health Atlas](https://data.dartmouthatlas.org/supplemental/#boundaries).
+
+
+![HSA_comparisons](/assets/HSA_comparisons.png)
+As seen more clearly in the Leaflet map
 
 
 Thank you to Professor Joe Holler and my class peers in Spring 2021 GEOG 323 for assistance, conversations, and thoughts while deliberating this assignment.
