@@ -203,6 +203,8 @@ Figure 6. The National Weather Service Storm Prediction Center's Severe Weather 
 
 Fortunately, this analysis did not suffer any significant unplanned deviations from the replication protocol prepared by Joe Holler in 2019. However, during my initial run-through of this code after debugging and refining code, I realized I had forgotten to include data from a temporally distant timeline with which I could compare tornado-related Twitter activity during early May. To remedy this, I ran another data pull on the morning of May 11th, 2021 (6 days after my initial pull), to access and include any verified and unverified tweets from the same geographic region. I was then able to effectively incorporate this data back into my code using the scaffold provided by Professor Holler and complete my analysis as an accurate replication.  
 
+While not necessarily an unplanned deviation from protocol, this replication effort did diverge from the original studies in one notable way: while collecting tweets with 
+
 
 ## Discussion
 
